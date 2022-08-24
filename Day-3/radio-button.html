@@ -1,0 +1,22 @@
+
+<body>
+    <!-- Step-47:Name Attribute: both radio buttons can be selected at the same time. To make it so selecting one radio button automatically deselects the other, both buttons must have a name attribute with the same value. -->
+    <label for="">
+        <input type="radio" name="indoor-outdoor" id="indoor">Indoor
+    </label>
+
+    <label>
+        <input id="outdoor" name="indoor-outdoor" type="radio"> Outdoor
+    </label>
+
+
+    <!-- Step-48:Value attribute: If you select the Indoor radio button and submit the form, the form data for the button is based on its name and value attributes. Since your radio buttons do not have a value attribute, the form data will include indoor-outdoor=on, which is not useful when you have multiple buttons.  -->
+    <label for="">
+        <input type="radio" name="indoor-outdoor" id="indoor" value="indoor">Indoor
+    </label>
+
+    <label>
+        <input id="outdoor" name="indoor-outdoor" type="radio" value="outdoor"> Outdoor
+    </label>
+
+</body>

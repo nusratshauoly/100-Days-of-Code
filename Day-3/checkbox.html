@@ -1,0 +1,108 @@
+
+<body>
+    <!-- Step:53: Checkbox : Forms commonly use checkboxes for questions that may have more than one answer. -->
+          <fieldset>
+               <legend>What's your cat's personality?</legend>
+               <input type="checkbox"> Loving
+          </fieldset>
+
+   <!-- Step:54: Add anotther id in checkbox -->
+         <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input type="checkbox" id="loving"> Loving
+        </fieldset>
+
+<!-- Step-55: label element and add a for attribute : There's another way to associate an input element's text with the element itself. You can nest the text within a label element and add a for attribute with the same value as the input element's id attribute.-->
+    
+        <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input type="checkbox" id="loving" for="Loving"> 
+            <label for="loving"> Loving
+            </label>
+        </fieldset>
+
+<!-- Step-56: Name Attribute:Add the name attribute to the checkbox input element. -->
+        <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input type="checkbox" id="loving" for="Loving" name="personality"> 
+            <label for="loving"> Loving
+            </label>
+        </fieldset>
+
+<!-- Step-57: Add another checkbox after the one you just added. The id attribute value should be lazy and the name attribute value should be the same as the last checkbox.
+
+Also add a label element to the right of the new checkbox with the text Lazy. Make sure to associate the label element with the new checkbox using the for attribute. -->
+
+        <fieldset>
+            <legend>What's your cat's personality?</legend>
+
+            <input type="checkbox" id="loving" for="Loving" name="personality"> 
+            <label for="loving"> Loving
+            </label>
+
+            <input type="checkbox" name="personality" id="lazy" for="lazy" >
+            <label for="lazy"> Lazy </label>
+
+<!-- Step:58: Add a final checkbox after the previous one with an id attribute value of energetic. The name attribute should be the same as the previous checkbox.
+
+Also add a label element to the right of the new checkbox with text Energetic. Make sure to associate the label element with the new checkbox. -->
+            <input type="checkbox" name="personality" id="energetic" for="energetic">
+            <label for="energetic"> Energetic </label>
+        </fieldset>
+
+<!-- Step-59: Value attribute: Like radio buttons, form data for selected checkboxes are name / value attribute pairs. While the value attribute is optional, it's best practice to include it with any checkboxes or radio buttons on the page.
+
+Add a value attribute to each checkbox. For convenience, set each checkbox's value attribute to the same value as its id attribute. -->
+<fieldset>
+    <legend>What's your cat's personality?</legend>
+
+    <input type="checkbox" id="loving" for="Loving" name="personality" value="loving"> 
+    <label for="loving"> Loving
+    </label>
+
+    <input type="checkbox" name="personality" id="lazy" for="lazy" value="lazy">
+    <label for="lazy"> Lazy </label>
+
+    <input type="checkbox" name="personality" id="energetic" for="energetic" value="energetic">
+    <label for="energetic"> Energetic </label>
+</fieldset>
+
+
+<!-- Step-60: Checked Attribute: In order to make a checkbox checked or radio button selected by default, you need to add the checked attribute to it. There's no need to set a value to the checked attribute. Instead, just add the word checked to the input element, making sure there is space between it and other attributes.
+
+Make the first radio button and the first checkbox selected by default. -->
+
+<label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+
+<input type="checkbox" id="loving" for="Loving" name="personality" value="loving" checked> 
+<label for="loving"> Loving
+</label>
+
+
+
+
+<!-- full form -->
+<main>
+        <fieldset>
+            <legend>Is your cat an indoor or outdoor cat? </legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>What's your cat's personality?</legend>
+
+            <input type="checkbox" id="loving" for="Loving" name="personality" value="loving" checked> 
+            <label for="loving"> Loving
+            </label>
+
+            <input type="checkbox" name="personality" id="lazy" for="lazy" value="lazy">
+            <label for="lazy"> Lazy </label>
+
+            <input type="checkbox" name="personality" id="energetic" for="energetic" value="energetic">
+            <label for="energetic"> Energetic </label>
+        </fieldset>
+
+    </main>
+</body>
