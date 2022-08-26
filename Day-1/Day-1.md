@@ -6,7 +6,7 @@
 <!-- ## Second Heading
 This is a test to see how the colors work. -->
 # Day-1
-I am  learning HTML . I am building a webpage using HTMl elements.
+I am  learning HTML . I am learning HTML by Learn HTML by Building a Cat Photo App.
 
 I learnt the following:
 
@@ -32,6 +32,6 @@ I learnt the following:
 14. Add emphasized tag inside paragraph tag.
 
 
-Check the code [here](./Learn-HTML-by-Building-a-Cat-Photo-App/index.html)
+Check the code [here](./full-code.html)
 
                     

@@ -1,0 +1,227 @@
+/* Step-15: We have created a separate styles.css file for you and switched the editor view to that file. You can change between files with the tabs at the top of the editor.
+
+Start by rewriting the styles you have created into the styles.css file. Make sure to exclude the opening and closing style tags. */
+
+h1, h2, p{
+    text-align: center;
+}
+/* step-59: Style both the h1 and the h2 elements so that only these elements' text use Impact font. */
+h1,h2{
+
+/*step-60: You can add a fallback value for the font-family by adding another font name separated by a comma. Fallbacks are used in instances where the initial is not found/available.
+Add the fallback font serif after the Impact font.
+
+ */
+    font-family: Impact,serif;
+}
+
+/*step-61: Make the Est. 2020 text italicized by creating an established class selector and giving it the font-style property with the value italic. */
+.established{
+    font-style:italic;
+  }
+     
+/* Step-19: Add another style to the file that changes the background-color property to brown for the body element. */
+
+body{
+    /* background-color: brown; */
+
+/* Step-20: That brown background makes it hard to read the text. Change the body element's background color to be burlywood so it has some color but you are still be able to read the text.  */
+
+/* Step-23: In your style sheet, comment out the line containing the background-color property and value, so you can see the effect of only styling div element. */
+/* background-color: burlywood; */
+
+
+/* Step-22: Create a new type selector in the style sheet that gives your div element a width of 300px. */
+
+/* step-58: Change all the text in your body, by adding a font-family property with the value sans-serif. This is a fairly common font that is very readable. */
+      font-family: sans-serif;
+
+/* sttep-73:To create a little more room around the menu, add 20px of space on the inside of the body element by using the padding property. */
+padding: 20px;
+}
+div{
+    /* width: 300px; */
+
+/* Step-25: the width of the div element is specified in pixels (px). Change the width property's value to be 80%, to make it 80% the width of its parent element (body).*/
+    width:80%;
+    background-color: burlywood;
+
+/* Step-26: Next, you want to center the div horizontally. You can do this by setting its margin-left and margin-right properties to auto.*/
+     margin-left: auto;
+     margin-right: auto;
+     /* margin:0 auto; */
+}
+
+/* step-27: Change the existing div selector into a class selector by replacing div with a class named menu.*/
+.menu{
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+
+/* step-54:Give the menu class a padding-left and a padding-right with the same value 20px.  */
+   /* padding-left: 20px;
+   padding-right: 20px; */
+
+/* step-55:Now try to add the same 20px padding to the top and bottom of the menu. */
+   /* padding-top: 20px;
+   padding-bottom: 20px; */
+
+/* step-56: Since all 4 sides of the menu have the same internal spacing, go ahead and delete the four properties and use a single padding property with the value 20px. */
+padding: 20px;
+
+/* step-57: The current width of the menu will always take up 80% of the body element's width. On a very wide screen, the coffee and dessert appear far apart from their prices.
+Add a max-width property to the menu class with a value of 500px to prevent it from growing too wide.*/
+max-width: 500px;
+
+/* Step-29: Delete the comment and its contents inside the body type selector. Now add a background-image property and set its value to */
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+}
+
+/* Step-34: Using your new flavor class as a selector, set the text-align property's value to left. */
+.flavor{
+    text-align: left;
+
+/* step-39:That's closer, but the price didn't stay over on the right. This is because inline-block elements only take up the width of their content. To spread them out, add a width property to the flavor and price class selectors that have a value of 50% each. */
+     /* width: 50%; */
+
+/* step-40:  Well that did not work. Styling the p elements as inline-block and placing them on separate lines in the code creates an extra space to the right of the first p element, causing the second one to shift to the next line. One way to fix this is to make each p element's width a little less than 50%.Change the width value to 49% for each class to see what happens.*/
+    /* width: 49%; */
+
+/* Step-42: Now go ahead and change both the flavor and price class' widths to be 50% again.*/
+     width: 50%;
+}
+
+/*  step-36: Now align the text to the right for the elements with the price class. */
+.price{
+   text-align: right;
+
+/* step-39:That's closer, but the price didn't stay over on the right. This is because inline-block elements only take up the width of their content. To spread them out, add a width property to the flavor and price class selectors that have a value of 50% each. */
+    /* width: 50%; */
+
+/* step-40:  Well that did not work. Styling the p elements as inline-block and placing them on separate lines in the code creates an extra space to the right of the first p element, causing the second one to shift to the next line. One way to fix this is to make each p element's width a little less than 50%.Change the width value to 49% for each class to see what happens.*/
+   /* width: 49%; */
+
+/* Step-42: Now go ahead and change both the flavor and price class' widths to be 50% again.*/
+width: 50%;
+}
+
+
+
+/* step-38: add a display property with value inline-block so the p elements behave more like inline elements. */
+.item p{
+    display: inline-block;
+
+/* step- 74: Target all the p elements nested in elements with the class named item and set their top and bottom margin to be 5px.*/
+margin-top:5px;
+margin-bottom:5px;
+
+/* step-75: Using the same style selector in the previous step, make the font size of the items and prices larger by using a value of 18px. */
+font-size:18px;
+
+}
+/* step-46: Since you know the prices on the right have significantly fewer characters, change the flavor class width value to be 75% and the price class width value to be 25%. */
+
+/* step-52: Since the flavor class selector already has the properties you want, just add the dessert class name to it. */
+.flavor,.dessert{
+    text-align: left;
+    width: 75%;
+  }
+  
+  .price {
+    text-align: right;
+    width: 25%;
+  }
+/* step-63:Add two new type selectors (h1 and h2). Use the font-size property for both, but use the value 40px for the h1 and 30px for the h2. */
+h1{
+    font-size:40px;
+
+/* step-85:Change the top margin of the h1 element to 0 to remove all the top margin. */
+margin-top:0;
+
+/*step-86: To remove some of the vertical space between the h1 element and the text Est. 2020, change the bottom margin of the h1 to 15px. */
+margin-bottom:15px;
+  }
+  h2{
+    font-size:30;
+  }
+  /* step-68: set height 3px inn hr element  */
+hr{
+    /* height: 3px; */
+
+/* step-71:Notice how the thickness of the line looks bigger? The default value of a property named border-width is 1px for all edges of hr elements. By changing the border to the same color as the background, the total height of the line is 5px (3px plus the top and bottom border width of 1px). Change the height property of the hr to be 2px, so the total height of it becomes 4px. */
+height: 2px;
+
+/* step-69: Change the background color of the hr element to brown so it matches the color of the coffee beans.*/
+ background-color: brown;
+ /* step-70:Make all the edges of the hr element the same color as the background of it using the border-color property. */
+ border-color: brown;
+}
+
+/* Step-76: Add some more space by creating a class named bottom-line using 25px for the margin-top property.*/
+.bottom-line{
+    margin-top: 25px;
+}
+
+/* step-78: Next you are going to be styling the footer element. To keep the CSS organized, add a comment at the end of styles.css with the text FOOTER. */
+
+/* FOOTER */
+
+/* step-79: Moving down to the footer element, make all the text have a value of 14px for the font size. */
+
+footer{
+    font-size: 14px;
+}
+
+/* step-80: To make the footer links the same color regardless if a link has been visited, use a type selector for the anchor element (a) and use the value black for the color property.*/
+a{
+    color:black;
+  }
+
+/* step-81: You change properties of a link when the link has actually been visited by using a pseudo-selector that looks like a:visited { propertyName: propertyValue; }.
+Change the color of the footer Visit our website link to be grey when a user has visited the link. */
+/* a:visited{
+    color:grey;
+} */
+
+/* step-82: You change properties of a link when the mouse hovers over them by using a pseudo-selector that looks like a:hover { propertyName: propertyValue; }.
+Change the color of the footer Visit our website link to be brown when a user hovers over it. */
+/* a:hover{
+    color:brown;
+  } */
+
+/* step-83: You change properties of a link when the link is actually being clicked by using a pseudo-selector that looks like a:active { propertyName: propertyValue; }.
+Change the color of the footer Visit our website link to be white when clicked on.*/
+/* a:active{
+    color:white;
+  } */
+
+/* step-84:To keep with the same color theme you have already been using (black and brown), change the color for when the link is visited to black and use brown for when the link is actually clicked. */
+a:visited {
+    color: black;
+  }
+  
+  a:hover {
+    color: brown;
+  }
+  
+  a:active {
+    color: brown;
+  }
+
+/* step-87: To decrease the default margin space below the address p element, create a class selector named address and use the value 5px for the margin-bottom property.*/
+.address{
+    margin-bottom:5px;
+  }
+
+/* step-90: To make the image behave like heading elements (which are block-level), create an img type selector and use the value block for the display property and use the applicable margin-left and margin-right values to center it horizontally.*/
+img{
+    display:block;
+  margin-left:auto;
+  margin-right:auto;
+
+/* step-92- It would be nice if the vertical space between the h2 elements and their associated icons was smaller. The h2 elements have default top and bottom margin space, so you could change the bottom margin of the h2 elements to say 0 or another number.
+
+There is an easier way, simply add a negative top margin to the img elements to pull them up from their current positions. Negative values are created using a - in front of the value. To complete this project, go ahead and use a negative top margin of 25px in the img type selector*/
+margin-top: -25px;
+}
