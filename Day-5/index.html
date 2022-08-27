@@ -1,0 +1,57 @@
+<!-- step-1: Add a DOCTYPE html declaration at the top of the document, and an html element after that. Give the html element a lang attribute with en as its value. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- step-2:Nest a head element within the html element. Just after the head element, add a body element. -->
+<head>
+<!-- step-4: Inside the head element, nest a meta element with the attribute charset set to utf-8. Remember that meta elements are self-closing, and do not need a closing tag. -->
+    <meta charset="UTF-8">
+<!-- step-5:Nest a self-closing meta element within the head. Give it a name attribute set to viewport and a content attribute set to width=device-width, initial-scale=1.0. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- step-3:Within the head element, nest a title element with the text Colored Markers. -->
+    <!-- <title>Learn CSS colors by Building a set of colored markers</title> -->
+    <title>Colored Markers</title>
+<!-- step-7: Nest a link element within the head. Give it a rel attribute set to stylesheet and an href attribute set to styles.css. -->
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- step-6: Within the body, nest an h1 element with the text CSS Color Markers. -->
+    <h1>CSS Color Markers</h1>
+
+<!-- step-9: First, within the body, add a div element and set its class attribute to container. Make sure the div element is below the h1 element.-->
+<div class="container">
+
+<!-- step-10: Next, within the div, add another div element and give it a class of marker-->
+
+<!-- step-16:To begin, add the class one to the first marker div element. -->
+
+<div class="marker one"></div>
+<!-- step-41:In the first marker div element, change the class one to red.-->
+<div class="marker red">
+<!-- step-70:Inside the red marker div, create a new div and give it a class of sleeve. -->
+<!-- step-76:Add a new div with the class cap before the sleeve div element. -->
+    <div class="cap"></div>
+    <div class="sleeve"></div>
+</div>
+<!-- step-14: In the container div, add two more div elements and give them each a class of marker.-->
+<!-- step-19:Add the class two to the second marker div, and the class three to the third marker div. -->
+<div class="marker two"></div>
+<div class="marker three"></div>
+<!-- step-44:Next, change the class two to green in the second marker div, and the class three to blue in the third marker div. -->
+
+<div class="marker green">
+    <!-- step-85:Add a cap and sleeve to both the green and blue markers. You can just copy the div elements from the red marker and paste them into the other two markers. -->
+    <div class="cap"></div>
+    <div class="sleeve"></div>
+</div>
+
+<div class="marker blue"></div>
+<div class="cap"></div>
+<div class="sleeve"></div>
+</div>
+
+
+</body>
+</html>
