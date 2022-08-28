@@ -38,9 +38,7 @@ To create chartreuse green, update the rgb function in the .one rule so that red
 For azure, update the rgb function in the .two rule so that green is at 127 and blue is at the max value.
 And for rose, which is sometimes called bright pink, update the rgb function in the .three rule so that blue is at 127 and red is at the max value.*/
 background-color: rgb(127,255,0);
-
-
-  }
+}
 
 /* step:20:Create a CSS rule that targets the class two and set its background-color property to green.
 Also, create a separate CSS rule that targets the class three and set its background-color to blue. */

@@ -36,7 +36,7 @@ body{
 /* step-58: Change all the text in your body, by adding a font-family property with the value sans-serif. This is a fairly common font that is very readable. */
       font-family: sans-serif;
 
-/* sttep-73:To create a little more room around the menu, add 20px of space on the inside of the body element by using the padding property. */
+/* step-73:To create a little more room around the menu, add 20px of space on the inside of the body element by using the padding property. */
 padding: 20px;
 }
 div{
@@ -178,7 +178,8 @@ a{
     color:black;
   }
 
-/* step-81: You change properties of a link when the link has actually been visited by using a pseudo-selector that looks like a:visited { propertyName: propertyValue; }.
+/* step-81: You change properties of a link when the link has actually been visited by using a border-color property. */
+ border-color: brown; that looks like a:visited { propertyName: propertyValue; }.
 Change the color of the footer Visit our website link to be grey when a user has visited the link. */
 /* a:visited{
     color:grey;
