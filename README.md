@@ -38,4 +38,17 @@ More Info [here](./Day-5/Day-5.md)
 I am learning HTML Forms by Building a Registration Form.
 
  
-More Info [here](./Day-6/Day-6.md)
+More Info [here](./Day-6/Day-6.md)  
+
+## Day-7
+I am Building a Survey Form
+
+ 
+More Info [here](./Day-7/Day-7.md)  
+
+## Day-8
+I am Building a Survey Form
+
+ 
+More Info [here](./Day-8/Day-8.md)
+
