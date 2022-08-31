@@ -20,7 +20,7 @@ I learnt the following:
                      * `<input type="submit" value="Submit">`  
                       
 9.**Fieldset elements**. `<fieldset></fieldset>`  
-10.**Label element**. `<label></label>   
+10.**Label element**. `<label></label>`   
 
 11.**Select element**. `<select name="select-option" id=""></select>`  
 12.**Option elements**. `<option value="">(select one)</option>`  
