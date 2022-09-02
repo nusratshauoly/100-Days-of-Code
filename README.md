@@ -64,4 +64,14 @@ More Info [here](./Day-9/Day-9.md)
 I am learning CSS Flexbox by Building a Photo Gallery.   
 
 
-More Info [here](./Day-10/Day-10.md)
+More Info [here](./Day-10/Day-10.md)  
+
+
+
+
+## Day-11  
+I am learning Typography by Building a Nutrition Label.   
+
+
+More Info [here](./Day-11/Day-11.md)
+

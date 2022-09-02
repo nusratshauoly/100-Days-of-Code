@@ -1,0 +1,131 @@
+/* step-5:Create a body selector and give it a font-family set to Open Sans with a fallback of sans-serif.*/
+/* step-11: If you inspect your .label element with your browser's developer tools, you may notice that it's actually 288 pixels wide instead of 270. This is because, by default, the browser includes the border and padding when determining an element's size.
+To solve this, reset the box model by creating a * selector and giving it a box-sizing property of border-box.*/
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Open Sans,sans-serif;
+}
+
+/* step=6:The font is a bit small. Create an html selector and set the font to have a size of 16px. */
+html{
+    font-size: 16px;
+}
+
+/* step-8: Create a .label selector and give it a border set to 2px solid black.*/
+.label{
+    border:2px solid black;
+/* step-9: Give your .label selector a width property set to 270px*/
+   width:270px;
+/* step-10: Give your .label selector a margin property set to 20px auto, and a padding property set to 0 7px.*/
+   margin:20px auto;
+  padding: 0 7px;
+}
+/* step-12: Create an h1 rule and set the font-weight property to 800. This will make your h1 text bolder.*/
+
+/* step-25:Now update your h1 selector to be header h1 to specifically target your h1 element within your new header. */
+header h1{
+/* step-20: Go ahead and remove the font-weight property from your h1 selector as well.*/
+    /* font-weight: 800; */
+/* step-13: Give your h1 selector a text-align property of center*/
+    text-align: center;
+/* step-14: Fine-tune the placement of your h1 by giving it a top and bottom margin of -4px and a left and right margin of 0.*/
+margin: -4px 0;
+
+/* step-18: The letter-spacing property can be used to adjust the space between each character of text in an element.
+Give your h1 selector a letter-spacing property set to 0.15px to space them out a bit more.*/
+letter-spacing: 0.15px;
+}
+/* step-15: Create a p selector and remove all margins*/
+p{
+    margin: 0;
+}
+/* step-17:Create a selector for your new .divider and set the border-bottom property to 1px solid #888989. Also give it a top and bottom margin of 2px. It should not have any left or right margin. */
+.divider{
+    border-bottom: 1px solid #888989;
+    margin:2px 0;
+
+/* step-41: Give the .divider selector a clear property set to right. This will clear the float property, pushing the divider and any following content down below the float text.*/
+
+    clear: right;
+}
+
+/* step-20:Create a .bold selector and give it a font-weight property set to 800 to make the text bold.
+Go ahead and remove the font-weight property from your h1 selector as well. */
+.bold{
+    font-weight: 800;
+}
+
+/* step-23:Create a new .right selector and set the float property to right. */
+.right{
+    float:right;
+}
+
+/* step-27:Create a new .lg selector and give it a height property set to 10px. Also create an .lg, .md selector and set the background-color property to black. */
+.lg{
+    height:10px;
+}
+.lg , .md{
+    background-color: black;
+/* step-28:You may notice there is still a small border at the bottom of your .lg element. To reset this, give your .lg, .md selector a border property set to 0. */
+    border: 0;
+}
+
+/* step-31:The rem unit stands for root em, and is relative to the font size of the html element.
+Create an .sm-text selector and set the font-size to 0.85rem, which would calculate to be roughly 13.6px (remember that you set your html to have a font-size of 16px). */
+.sm-text{
+    font-size: 0.85rem;
+}
+
+/* step-33:Create a new .calories-info h1 selector setting the top and bottom margin to -5px, and the left and right margin to -2px. */
+.calories-info h1{
+    margin:-5px -2px;
+/* step-35: The larger font size of the number 230 is causing it to overflow. Give the .calories-info h1 an overflow property set to hidden to avoid this.*/
+overflow: hidden;
+}
+
+/* step-34: Create a .calories-info span selector and set the font-size to 1.2em.*/
+.calories-info span{
+    font-size: 1.2em;
+/* step-36: Give your .calories-info span selector a margin-top set to -7px. This will shift your 230 text into place.*/
+margin-top: -7px;
+}
+/* step-38:Create an .md selector and give it a height property of 5px. */
+.md{
+    height: 5px;
+}
+
+/* step-45:Create a new .indent selector and give it a margin-left property set to 1em. */
+.indent{
+    margin-left: 1em;
+}
+
+/* step-46: Create a .daily-value p selector to target all of your p elements in the daily-value section. Give this new selector a border-bottom set to 1px solid #888989.*/
+.daily-value p{
+    border-bottom: 1px solid #888989;
+}
+
+/* step-48: The :not pseudo-selector can be used to select all elements that do not match the given CSS rule.
+div:not(#example) {
+  color: red;
+}
+The above selects all div elements without an id of example.
+Modify your .daily-value p selector to exclude the .no-divider elements.
+*/
+.daily-value p:not(.no-divider){
+    border-bottom: 1px solid #888989;
+  }
+/* step-58: Create a .dbl-indent selector and give it a left margin of 2em.*/
+.dbl-indent{
+    margin-left:2em;
+}
+
+/* step-65:Create a .note selector, and set the size of the font to 0.6rem. Also set the top and bottom margins to 5px, removing the left and right margins. */
+.note{
+    font-size: 0.6rem;
+    margin: 5px 0;
+/* step-66:Give the .note selector a left and right padding of 8px, removing the top and bottom padding. Also set the text-indent property to -8px. */
+ padding:0 8px;
+ text-indent: -8px;
+}
