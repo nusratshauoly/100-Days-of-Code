@@ -4,10 +4,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Accessibility Quiz</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
+   <header>
+    <!-- step-7:Within the header, provide context about the page by nesting one img, h1, and nav element.
+    The img should point to https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg, and have an id of logo.
+    The h1 should contain the text HTML/CSS Quiz. -->
+    <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" id="logo" alt="">
+    <h1>HTML/CSS Quiz</h1>
+    
+    <nav>
+<!-- step-12: To enable navigation on the page, add an unordered list with the following three list items:
+The list items text should be wrapped in anchor tags.
+-->
+<ul>
+    <!-- step-18: To be able to navigate within the page, give each anchor element an href corresponding to the id of the h2 elements.-->
+    <li> <a href="#student-info">INFO</a> </li>
+   
+    <li><a href="#html-questions">HTML</a></li>
+    <li><a href="#css-questions">CSS</a></li>
+</ul>
+    </nav>
+   </header>
+   <main>
+    <!-- step-14: Within the main element, create a form with three nested section elements. Then, make the form submit to https://freecodecamp.org/practice-project/accessibility-quiz, using the correct method.-->
+    <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
+
+<!-- step-15: To increase the page accessibility, the role attribute can be used to indicate the purpose behind an element on the page to assistive technologies. The role attribute is a part of the Web Accessibility Initiative (WAI), and accepts preset values.
+Give each of the section elements the region role.-->
+
+<!-- step-16: Every region role requires a visible label, which should be referenced by the aria-labelledby attribute.
+To the section elements, give the following aria-labelledby attributes:
+student-info
+html-questions
+css-questions
+Then, within each section element, nest one h2 element with an id matching the corresponding aria-labelledby attribute. Give each h2 suitable text content.-->
+        <section role="region" aria-labelledby="student-info">
+            <h2 id="student-info">Student Info</h2>
+            <!-- step-19: Filling out the content of the quiz, below #student-info, add three div elements with a class of info.
+            Then, within each div nest one label element, and one input element.-->
+
+            <!-- step-20: It is important to link each input to the corresponding label element. This provides assistive technology users with a visual reference to the input.
+        This is done by giving the label a for attribute, which contains the id of the input.
+    This section will take a student's name, email address, and date of birth. Give the label elements appropriate for attributes, as well as text content. Then, link the input elements to the corresponding label elements.-->
+
+    <!-- step-21:Keeping in mind best-practices for form inputs, give each input an appropriate type and name attribute. Then, give the first input a placeholder attribute. -->
+    <!-- step-22: Even though you added a placeholder to the first input element in the previous lesson, this is actually not a best-practice for accessibility; too often, users confuse the placeholder text with an actual input value - they think there is already a value in the input.
+    Remove the placeholder text from the first input element, relying on the label being the best-practice.-->
+            <div class="info">
+                <label for="name">
+                    
+                </label>
+                <input type="text" name="name" id="name" >
+            </div>
+           
+            <div class="info">
+                <label for="email">
+                    
+                </label>
+               <input type="email" name="email" id="email" placeholder="email">
+            </div>
+            <!-- step-23:Arguably, D.O.B. is not descriptive enough. This is especially true for visually impaired users. One way to get around such an issue, without having to add visible text to the label, is to add text only a screen reader can read.
+
+Append a span element with a class of sr-only to the current text content of the third label element. -->
+            <div class="info">
+<!-- step-24:Within the span element, add the text (Date of Birth) -->
+                <label for="date">
+                    D.O.B.<span class="sr-only">(Date of Birth)</span>
+                </label>
+                <input type="date" name="date" id="date" placeholder="date">
+            </div>
+        </section>
+         <!-- 2nd section -->
+        <section role="region" aria-labelledby="html-questions">
+            <h2 id="html-questions">html-questions</h2>
+<!-- step-26: Within the second section element, add two div elements with a class of question-block.
+Then, within each div.question-block element, add one p element with text of incrementing numbers, starting at 1, and one fieldset element with a class of question.-->
+            <div class="question-block">
+                <p>1</p>
+
+<!--step-28:Give each fieldset an adequate name attribute. Then, give both unordered lists a class of answers-list.
+
+Finally, use the legend to caption the content of the fieldset by placing a true/false question as the text content.  -->
+                <fieldset class="question" name="html-question-one">
+<!-- step-27: Each fieldset will contain a true/false question.
+Within each fieldset, nest one legend element, and one ul element with two options.-->
+                      <legend>what is html?</legend>
+                      <ul class="answers-list">
+                        <li>
+<!-- step-30: Although not required for label elements with a nested input, it is still best-practice to explicitly link a label with its corresponding input element.
+
+Link the label elements with their corresponding input elements.-->
+                            <label for="true-false">
+                                <input type="radio" name="" id="true-false">
+                            </label>
+                        </li>
+
+                        <li>
+                            <label for="true-false">
+                                <input type="radio" name="" id="true-false">
+                            </label>
+                        </li>
+                      </ul>
+                </fieldset>
+
+            </div>
+
+            <div class="question-block">
+                <p>2</p>
+                <fieldset class="question" name="html-question-two">
+                    <legend>what is html5?</legend>
+                      <ul class="answers-list">
+
+<!-- step-29: To provide the functionality of the true/false questions, we need a set of inputs which do not allow both to be selected at the same time.
+
+Within each list element, nest one label element, and within each label element, nest one input element with the appropriate type.-->
+                        <li>
+                            <label for="true-false">
+                                <input type="radio" name="" id="true-false">
+                            </label>
+
+                        </li>
+
+                        <li>
+                            <label for="true-false">
+                                <input type="radio" name="" id="true-false">
+                            </label>
+                        </li>
+                      </ul>
+                </fieldset>
+            </div>
+
+        </section>
+        <section role="region" aria-labelledby="css-questions">
+            <h2 id="css-questions">css-questions</h2>
+        </section>
+        <button type="submit"></button>
+    </form>
+   </main>
 </body>
 </html>

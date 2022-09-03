@@ -78,7 +78,7 @@ More Info [here](./Day-11/Day-11.md)
 
 
 ## Day-12  
-I am learning .   
+I am learning Accessibility by Building a Quiz.   
 
 
 More Info [here](./Day-12/Day-12.md)
