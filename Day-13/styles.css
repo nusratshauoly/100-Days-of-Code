@@ -1,0 +1,20 @@
+/* step-33: To prevent unnecessary repetition, target the before pseudo-element of the p element, and give it a content property of "Question #". */
+p::before{
+    content: "Question #";
+}
+
+/* step-44: Back to styling the page. Select the list elements within the navigation bar, and give them the following styles:*/
+/*  */
+nav>ul>li{
+
+    color: #dfdfe2;
+margin: 0 0.2rem;
+padding: 0.2rem;
+display: block;
+}
+/* step-45:On the topic of visual accessibility, contrast between elements is a key factor. For example, the contrast between the text and the background of a heading should be at least 4.5:1.
+
+Change the font color of all the anchor elements within the list elements to something with a contrast ratio of at least 7:1. */
+li > a {
+	color:#fff
+}
