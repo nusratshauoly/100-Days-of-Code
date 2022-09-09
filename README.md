@@ -96,3 +96,10 @@ I am learning Accessibility by Building a Quiz.
 
 
 More Info [here](./Day-14/Day-14.md)
+
+
+## Day-15  
+I am Builiding a Tribute Page.   
+
+
+More Info [here](./Day-15/Day-15.md)
