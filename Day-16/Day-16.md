@@ -1,5 +1,5 @@
 # Day-16
-I am Builiding a Tribute Page.
+I am Building a Tribute Page.
 
 I learnt the following:
 

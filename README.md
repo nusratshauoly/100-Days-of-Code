@@ -99,13 +99,70 @@ More Info [here](./Day-14/Day-14.md)
 
 
 ## Day-15  
-I am Builiding a Tribute Page.   
+I am Building a Tribute Page.   
 
 
 More Info [here](./Day-15/Day-15.md)  
 
 ## Day-16  
-I am Builiding a Tribute Page.   
+I am Building a Tribute Page.   
 
 
-More Info [here](./Day-16/Day-16.md)
+More Info [here](./Day-16/Day-16.md)  
+
+## Day-17  
+I am .   
+
+
+More Info [here](./Day-17/Day-17.md)   
+## Day-18  
+I am .   
+
+
+More Info [here](./Day-18/Day-18.md)   
+
+## Day-19  
+I am .   
+
+
+More Info [here](./Day-19/Day-19.md)   
+
+## Day-20  
+I am .   
+
+
+More Info [here](./Day-20/Day-20.md)  
+
+## Day-21  
+I am .   
+
+
+More Info [here](./Day-21/Day-21.md)   
+
+## Day-22  
+I am .   
+
+
+More Info [here](./Day-22/Day-22.md)    
+
+## Day-23  
+I am .   
+
+
+More Info [here](./Day-23/Day-23.md)    
+
+## Day-24  
+I am .   
+
+
+More Info [here](./Day-24/Day-24.md)    
+## Day-25  
+I am .   
+
+
+More Info [here](./Day-25/Day-25.md)     
+## Day-26  
+I am .   
+
+
+More Info [here](./Day-26/Day-26.md)
