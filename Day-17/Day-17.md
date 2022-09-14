@@ -1,8 +1,8 @@
 # Day-17
-I am .
+I am Building a Tribute Page.
 
 I learnt the following:
 
 
-Check the HTML code [here](./.html)  
-Check the CSS code [here](./.css)
+Check the HTML code [here](./full-code.html)  
+Check the CSS code [here](./full-code.css)
