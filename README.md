@@ -116,7 +116,7 @@ I am Building a Tribute Page.
 
 More Info [here](./Day-17/Day-17.md)   
 ## Day-18  
-I am .   
+I am learning more about CSS Pseudo Selectors by building a balance sheet.   
 
 
 More Info [here](./Day-18/Day-18.md)   
