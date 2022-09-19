@@ -1,8 +1,8 @@
 # Day-19
-I am .
+I am Learning CSS Pseudo Selectors By Building A Balane Sheet.
 
 I learnt the following:
 
 
-Check the HTML code [here](./.html)  
-Check the CSS code [here](./.css)
+Check the HTML code [here](./full-code.html)  
+Check the CSS code [here](./full-code.css)
