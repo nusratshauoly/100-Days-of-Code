@@ -128,7 +128,7 @@ I am learning more about CSS Pseudo Selectors by building a balance sheet.
 More Info [here](./Day-19/Day-19.md)   
 
 ## Day-20  
-I am .   
+I am learning more about CSS Pseudo Selectors by building a balance sheet.   
 
 
 More Info [here](./Day-20/Day-20.md)  
