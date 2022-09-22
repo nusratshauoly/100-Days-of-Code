@@ -1,0 +1,19 @@
+/* step-5: To get your painting started, give your body element a background-color of rgb(184, 132, 46). */
+body{
+    background-color: rgb(184, 132, 46);
+}
+/* step-7: Use an id selector to give the back-wall element a background-color of #8B4513.*/
+#back-wall{
+    background-color: #8B4513;
+/* step-8: Give the back-wall element a width of 100% and a height of 60%. */
+    width:100%;
+    height: 60%;
+/* step-9: Set the position property for the back-wall element to absolute. An absolute position takes the element out of that top-down document flow and allows you to adjust it relative to its container.
+When an element is manually positioned, you can shift its layout with top, left, right, and bottom. Set the back-wall to have a top value of 0, and a left value of 0.*/
+    position: absolute;
+    top:0;
+    left:0;
+/* step-10:Since the back-wall element will need to appear "behind" the other elements you will be creating, give the back-wall element a z-index of -1. */
+    z-index: -1;
+
+}

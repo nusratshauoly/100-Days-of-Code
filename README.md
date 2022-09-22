@@ -140,13 +140,13 @@ I am Learning CSS Pseudo Selectors By Building A Balane Sheet.
 More Info [here](./Day-21/Day-21.md)   
 
 ## Day-22  
-I am .   
+I am learning Intermediate CSS by Building a Picasso Painting.   
 
 
 More Info [here](./Day-22/Day-22.md)    
 
 ## Day-23  
-I am .   
+I am learning Intermediate CSS by Building a Picasso Painting.    
 
 
 More Info [here](./Day-23/Day-23.md)    

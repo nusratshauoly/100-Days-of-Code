@@ -1,0 +1,49 @@
+<!-- step-1:Start by setting up your HTML structure. Add a <!DOCTYPE> declaration and an html element with a lang attribute set to en. Within the html element, add a head element and a body element. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- step-2: Within your head element, add a meta tag with the charset attribute set to utf-8. Also add a title element with the text Picasso Painting. -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picasso Painting</title>
+    <!-- step-3: Add a link element with a rel of stylesheet and an href of styles.css.-->
+    <link rel="stylesheet" href="styles.css">
+    <!-- step-4:FontAwesome is a library of SVG-powered icons, many of which are freely available to use. You will be using some of these icons in this project, so you will need to link the external stylesheet to your HTML. -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body>
+    <!-- step-6:Within your body tag, add a div element. Give it an id of back-wall -->
+    <div id="back-wall">
+
+    </div>
+
+    <!-- step-11: Below your back-wall element, create a div with a class of characters. This is where you will be creating your painting's characters.-->
+    <div class="characters">
+    <!-- step-12: Inside that characters element, create another div with an id of offwhite-character.-->
+        <div id="offwhite-character">
+    <!-- step-13:Create four div elements inside your offwhite-character element. Give those div elements the following id values, in order: white-hat, black-mask, gray-instrument, tan-table. -->     
+            <div id="white-hat"></div>
+            <div id="black-mask">
+    <!-- step-14:This character needs eyes. Create two div elements in the black-mask element. Give them the classes eyes left and eyes right, in that order. -->
+                <div class="eyes left"></div>
+                <div class="eyes right"></div>
+            </div>
+            <div id="gray-instrument">
+
+    <!-- step-15:Create some "dots" for the instrument. Add five div elements within your gray-instrument element. Set the class of each to black-dot. -->
+                <div class="black-dot"></div>
+                <div class="black-dot"></div>
+                <div class="black-dot"></div>
+                <div class="black-dot"></div>
+                <div class="black-dot"></div>
+            </div>
+            <div id="tan-table"></div>
+
+        </div>
+
+
+    </div>
+  
+</body>
+</html>
