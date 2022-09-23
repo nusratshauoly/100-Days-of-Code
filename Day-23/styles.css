@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(184, 132, 46);
+  }
+  
+  #back-wall {
+    background-color: #8B4513;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  /* step-16: Using an id selector, create a rule for your offwhite-character element. Give it a width of 300px, a height of 550px, and a background-color of GhostWhite.*/
+#offwhite-character{
+    width:300px;
+    height: 550px;
+    background-color: ghostwhite;
+/* step-17: Move the offwhite-character into place by giving it a position of absolute, a top value of 20%, and a left value of 17.5%.*/
+    position: absolute;
+    top:20%;
+    left:17.5%;
+}
+
+/* step-18: Using an id selector, style your white-hat element. Give it a width and height of 0, and a border-style of solid.*/
+#white-hat{
+    width:0;
+    height: 0;
+    border-style: solid;
+/* step-19: That does not look quite right. Set a border-width of 0 120px 140px 180px to size the hat properly.*/
+    border-width: 0 120px 140px 180px;
+/* step-20: Now you have a large box. Give it a border-top-color, border-right-color, and border-left-color of transparent. Set the border-bottom-color to GhostWhite. This will make it look more like a hat.*/
+border-top-color:transparent;
+border-right-color:transparent;
+border-left-color:transparent;
+border-bottom-color:ghostwhite;
+
+}
