@@ -1,5 +1,5 @@
 # Day-24
-I am .
+I am learning Intermediate CSS by Building a Picasso Painting.
 
 I learnt the following:
 

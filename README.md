@@ -152,7 +152,7 @@ I am learning Intermediate CSS by Building a Picasso Painting.
 More Info [here](./Day-23/Day-23.md)    
 
 ## Day-24  
-I am .   
+I am learning Intermediate CSS by Building a Picasso Painting. 
 
 
 More Info [here](./Day-24/Day-24.md)    

@@ -1,0 +1,150 @@
+body {
+    background-color: rgb(184, 132, 46);
+  }
+  
+  #back-wall {
+    background-color: #8B4513;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  #offwhite-character {
+    width: 300px;
+    height: 550px;
+    background-color: GhostWhite;
+    position: absolute;
+    top: 20%;
+    left: 17.5%;
+  }
+  
+  #white-hat {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 120px 140px 180px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: GhostWhite;
+    border-left-color: transparent;
+
+/* step-21: Give the hat a position of absolute, a top value of -140px, and a left value of 0.*/
+    position: absolute;
+    top:-140px;
+    left:0;
+  }
+/* step-22: Using an id selector, create a rule for your black-mask element. Give it a width of 100%, a height of 50px, and a background-color of rgb(45, 31, 19).*/
+   #black-mask{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(45, 31, 19);
+
+/* step-23: Give the mask a position of absolute, and a top and left value of 0.*/
+
+    position: absolute;
+    top:0;
+    left:0;
+/* step-24: To ensure you can see the mask, give it a z-index of 1*/
+    z-index: 1;
+}
+
+/* step-25: Using an id selector, give your gray-instrument element a width of 15%, a height of 40%, and a background-color of rgb(167, 162, 117)*/
+#gray-instrument{
+    width:15%;
+    height: 40%;
+    background-color: rgb(167,162,117);
+/* step-26: Now move it into place with a position of absolute, a top value of 50px, and a left value of 125px */
+    position: absolute;
+    top:50px;
+    left:125px;
+/* step-27:Set the z-index to 1 */
+    z-index: 1;
+}
+
+/* step-28: Use a class selector to create a rule for the black-dot elements. Set the width to 10px, the height to 10px, and the background-color to rgb(45, 31, 19).*/
+  .black-dot{
+    width:10px;
+    height: 10px;
+    background-color: rgb(45, 31, 19);
+/* step-29:These dots are just a little too square. Give the black-dot class a border-radius of 50% to fix it. */
+    border-radius: 50%;
+/* step-30:Move the dots into place by setting the display to block, the margin to auto, and the margin-top to 65%. */
+    display: block;
+    margin: auto;
+    margin-top: 65%;
+}
+
+/* step-31: Use an id selector to style your tan-table element. Give it a width of 450px, a height of 140px, and a background-color of #D2691E.*/
+#tan-table{
+    width: 450px;
+    height: 140px;
+    background-color: #D2691E;
+/* step-32: Move the table into place by giving it a position of absolute, a top value of 275px, and a left value of 15px.*/
+    position: absolute;
+    top:275px;
+    left:15px;
+/* step-33: Give the table a z-index of 1.*/
+    z-index: 1;
+}
+/* step-38: Use an id selector to create a rule for your black-character element. Set the width to 300px, the height to 500px, and the background-color to rgb(45, 31, 19).*/
+#black-character{
+    width:300px;
+    height:500px;
+    background-color:rgb(45, 31, 19);
+/* step-39: Move the black-character element into place by setting the position to absolute, the top to 30%, and the left to 59%.*/
+    position: absolute;
+    top:30%;
+    left:59%;
+
+}
+/* step-40: Use an id selector to create a rule for your black-hat element. Give it a width of 0, a height of 0, and a border-style of solid.*/
+#black-hat{
+    width:0;
+    height: 0;
+    border-style: solid;
+/* step-41: Set the border-width of the black-hat to 150px 0 0 300px.*/
+    border-width: 150px 0 0 300px;
+/* step-42: Give it a border-top-color, border-right-color, and border-bottom-color of transparent. Set the border-left-color to rgb(45, 31, 19).*/
+    border-top-color: transparent;
+    border-right-color:transparent;
+    border-bottom-color:transparent;
+    border-left-color: rgb(45, 31, 19);
+ /*step-43: Now position the black-hat element. Give it a position of absolute, with a top of -150px and a left of 0. */
+    position: absolute;
+    top:-150px;
+    left:0;
+}
+
+/* step:44: Using an id selector, style the gray-mask element. Give it a width of 150px, a height of 150px, and a background-color of rgb(167, 162, 117)*/
+#gray-mask{
+    width:150px;
+    height: 150px;
+    background-color: rgb(167,162,117);
+/* step-45:Position the gray-mask by setting position to absolute, the top to -10px, and the left to 70px. */
+    position: absolute;
+    top:-10px;
+    left:70px;
+}
+/* step-46: Using an id selector, create a rule for the white-paper element. Set the width to 400px, the height to 100px, and the background-color to GhostWhite.*/
+#white-paper{
+    width:400px;
+    height:100px;
+    background-color: ghostwhite;
+/* step-47: Give the white-paper a position of absolute, a top of 250px, and a left of -150px to move it into place.*/
+    position: absolute;
+    top:250px;
+    left:-150px;
+/* step-48:Set the z-index of the white-paper to 1. */
+    z-index: 1;
+}
+/* step-49: FontAwesome icons come with their own styling to define the icon. However, you can still set the styling yourself as well, to change things like the color and size. For now, use a class selector to target your fa-music icons. Set the display to inline-block, the margin-top to 8%, and the margin-left to 13%.*/
+.fa-music{
+    display: inline-block;
+    margin-top: 8%;
+    margin-left: 13%;
+}
+  
+
