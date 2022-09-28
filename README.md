@@ -157,12 +157,36 @@ I am learning Intermediate CSS by Building a Picasso Painting.
 
 More Info [here](./Day-24/Day-24.md)    
 ## Day-25  
-I am .   
+I am learning Intermediate CSS by Building a Picasso Painting.   
 
 
 More Info [here](./Day-25/Day-25.md)     
 ## Day-26  
-I am .   
+I am learning Intermediate CSS by Building a Picasso Painting.   
 
 
 More Info [here](./Day-26/Day-26.md)
+
+## Day-27  
+I am learning Responsive Web Designing by building a Piano.
+
+
+More Info [here](./Day-27/Day-27.md)
+
+## Day-28  
+   
+
+
+More Info [here](./Day-28/Day-28.md)
+
+## Day-29  
+   
+
+
+More Info [here](./Day-29/Day-29.md)
+
+## Day-30  
+   
+
+
+More Info [here](./Day-30/Day-30.md)

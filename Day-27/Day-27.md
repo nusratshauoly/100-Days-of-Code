@@ -1,5 +1,5 @@
-# Day-26
-I am learning Intermediate CSS by Building a Picasso Painting.
+# Day-27
+I am learning Responsive Web Designing by building a Piano.
 
 I learnt the following:
 
