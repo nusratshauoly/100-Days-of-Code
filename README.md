@@ -174,13 +174,13 @@ I am learning Responsive Web Designing by building a Piano.
 More Info [here](./Day-27/Day-27.md)
 
 ## Day-28  
-   
+I am learning to build a Technical Documentation Page.
 
 
 More Info [here](./Day-28/Day-28.md)
 
 ## Day-29  
-   
+I am learning to build a Technical Documentation Page. 
 
 
 More Info [here](./Day-29/Day-29.md)
