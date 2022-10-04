@@ -186,7 +186,7 @@ I am learning to build a Technical Documentation Page.
 More Info [here](./Day-29/Day-29.md)
 
 ## Day-30  
-   
+I am learning to build a Technical Documentation Page.
 
 
 More Info [here](./Day-30/Day-30.md)
