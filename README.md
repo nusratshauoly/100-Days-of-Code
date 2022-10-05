@@ -196,4 +196,10 @@ More Info [here](./Day-30/Day-30.md)
 I am learning to build a Technical Documentation Page.
 
 
-More Info [here](./Day-30/Day-31.md)
+More Info [here](./Day-31/Day-31.md)
+
+## Day-32  
+I am learning to build a Technical Documentation Page.
+
+
+More Info [here](./Day-32/Day-32.md)
