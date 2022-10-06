@@ -1,51 +1,50 @@
+<!-- step-1: Begin with the basic HTML structure. Add a DOCTYPE declaration and html, head, body, and title elements.
+Set the language of this page to English. Set the title to Piano. -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Picasso Painting</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-  </head>
-  <body>
-    <div id="back-wall"></div>
-    <div class="characters">
-      <div id="offwhite-character">
-  
-        <div id="white-hat"></div>
-        <div id="black-mask">
-          <div class="eyes left"></div>
-          <div class="eyes right"></div>
-        </div>
-        <div id="gray-instrument">
-          <div class="black-dot"></div>
-          <div class="black-dot"></div>
-          <div class="black-dot"></div>
-          <div class="black-dot"></div>
-          <div class="black-dot"></div>
-        </div>
-        <div id="tan-table"></div>
-      </div>
+    <head>
+    <!-- step-2: Add two meta tags, one to optimize your page for mobile devices, and one to specify an accepted charset for the page. -->
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Piano</title>
+    <!-- step-8:Add a link element within your head element. For that link element, set the rel attribute to stylesheet and the href to ./styles.css. -->
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+    <!--step-3:Time to start working on the piano. Create a div element within your body element with the id set to piano.-->
+       <div id="piano">
+    <!-- step-21:The piano needs the freeCodeCamp logo to make it official.
+Add an img element before your .keys element. Give the img a class of logo, and set the src to https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg. Give it an alt text of freeCodeCamp Logo. -->
+            <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" class="logo" alt="freeCodeCamp Logo">
+    <!-- step-4:Nest a second div within your existing div, and set the class to be keys.-->
+           <div class="keys">
+    <!-- step-5: Within your .keys element, add seven div elements. Give them all the class key. -->
+                <div class="key"></div>
+    <!-- step-6:Remember that a class attribute can have multiple values. To separate your white keys from your black keys, you'll add a second class value of black--key. Add this to your second, third, fifth, sixth, and seventh .key elements. -->
+                <div class="key black--key"></div>
+                <div class="key black--key"></div>
+                <div class="key"></div>
+                <div class="key black--key"></div>
+                <div class="key black--key"></div>
+                <div class="key black--key"></div>
+<!-- step-7:Now copy the set of seven .key elements, and paste two more sets into the .keys div. -->
+                <div class="key"></div>
+                <div class="key black--key"></div>
+                <div class="key black--key"></div>
+                <div class="key"></div>
+                <div class="key black--key"></div>
+                <div class="key black--key"></div>
+                <div class="key black--key"></div>
 
-<!-- step-34:After your div#offwhite-character element, add a div with the id of black-character. -->
-       <div id="black-character">
-<!-- step-35:Within your new black-character element, add three div elements with the following id values, in order: black-hat, gray-mask, white-paper. -->
-         <div id="black-hat"></div>
-         <div id="gray-mask">
-<!-- step-36: The mask needs eyes. Within your gray-mask element, add two div elements. The first should have the class set to eyes left, and the second should have the class set to eyes right.-->
-          <div class="eyes left"></div>
-          <div class="eyes right"></div>
-         </div>
-         <div id="white-paper">
-<!-- step-37:Within your white-paper element, add four i elements. Give them all a class value of fas fa-music. -->
-          <i class="fas fa-music"></i>
-          <i class="fas fa-music"></i>
-          <i class="fas fa-music"></i>
-          <i class="fas fa-music"></i>
-         </div>
-         
+                <div class="key"></div>
+                <div class="key black--key"></div>
+                <div class="key black--key"></div>
+                <div class="key"></div>
+                <div class="key black--key"></div>
+                <div class="key black--key"></div>
+                <div class="key black--key"></div>
+           </div>
        </div>
-       
-       
-    </div>
-  </body>
+    </body>
 </html>

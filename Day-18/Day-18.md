@@ -1,16 +1,27 @@
 # Day-18
-I am learning more about CSS Pseudo Selectors by building a balance sheet.
+I am Learning CSS Pseudo Selectors By Building A Balane Sheet.
 
 I learnt the following:
-1. **flex** attribute : `display:flex;`
-2. **aria-hidden** attribute : `aria-hidden:true`
-3. **caption** element : `<caption>Assets</caption>;`
-4. **thead** (table-head) and **tbody** (table-body): `<thead></thead>` and `<tbody></tbody>`
-5. **tr** (table-row) element and **td** table-data) element : `<tr></tr>` and `<td></td>.`
-6. **table** element: `<table></table>`
-7. **box-sizing** property: `box-sizing: border-box;`
-8. The **span[class~="sr-only"]** selector will select any span element whose class includes sr-only.
-9. **border** property : `border:0;`  
+1. **[attribute="value"]** selector: `tr[class="total"]{ font-weight: bold;
+   border-bottom: 4px double #0a0a23;
+}; tr[class="total"] th{}`
+2. `tr.total td{
+  text-align: right;
+  padding: 0 0.25rem;
+}; tr.total td:nth-of-type(3){
+  padding: 0.5rem;
+}; tr.data td:last-of-type{
+  padding-right: 0.5rem;
+}`
+3. **hover effect** : `tr.total:hover{
+  background-color:#99c9ff;
+};`
+4. **font-style** and **font-weight** attribute: `td.current{
+  font-style: italic; font-weight: normal;
+}`;
+5. **background image**: `background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);`
+6. **display** property: `display:block;`
+7. **vertical-align** and **text-align** property: `text-align: right;`
 
 Check the HTML code [here](./full-code.html)  
 Check the CSS code [here](./full-code.css)

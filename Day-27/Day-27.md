@@ -1,8 +1,8 @@
-# Day-27
-I am learning Responsive Web Designing by building a Piano.
+# Day-32
+
 
 I learnt the following:
 
 
-Check the HTML code [here](./full-code.html)  
-Check the CSS code [here](./full-code.css)
+Check the HTML code [here](./index.html)  
+Check the CSS code [here](./styles.css)

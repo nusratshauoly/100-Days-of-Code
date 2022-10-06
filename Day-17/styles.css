@@ -1,0 +1,114 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    color: #0a0a23;
+}
+/* step-46:Rather than having to constantly double-check you are not overwriting your earlier properties, you can use the !important keyword to ensure these properties are always applied, regardless of order or specificity.
+Give each property in your span[class~="sr-only"] selector an !important keyword. Do not change any of the values. */
+  span[class~="sr-only"]{
+    border: 0 !important;
+/* step-31:The CSS clip property is used to define the visible portions of an element. Set the span[class~="sr-only"] selector to have a clip property of rect(1px, 1px, 1px, 1px).
+The clip-path property determines the shape the clip property should take. Set both the clip-path and -webkit-clip-path properties to the value of inset(50%), forming the clip-path into a rectangle within the element. */
+    clip:rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path:inset(50%) !important;
+/* step-32: Now you need to size these elements down. Give your span[class~="sr-only"] selector a width and height property set to 1px.*/
+    height: 1px !important;
+    width:1px !important;
+/* step-33: To prevent the text content from overflowing, give your span[class~="sr-only"] selector an overflow property set to hidden and a white-space property set to nowrap */
+    overflow: hidden !important;
+    white-space: nowrap !important;
+/* step-34: Finally, you need to take these hidden elements out of the document flow. Give the span[class~="sr-only"] selector a position property set to absolute, a padding property set to 0, and a margin property set to -1px. This will ensure that not only are they no longer visible, but they are not even within the page view.*/
+   
+   position: absolute !important;
+   padding: 0 !important;
+   margin: -1 !important;
+}
+/* step-35: Time to style your table heading. Create an h1 selector. Give it a max-width property set to 37.25rem, a margin property set to 0 auto, and a padding property set to 1.5rem 1.25rem.
+*/
+  
+h1{
+    max-width: 37.25rem;
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem;
+}
+
+/* step-36: Target your flex container with an h1 .flex selector. Give it a display property set to flex to enable the flexbox layout. Then set the flex-direction property to column-reverse - this will display the nested elements from bottom to top. Finally, set the gap property to 1rem to create some space between the elements.*/
+h1 .flex{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+}
+
+/* step-37: The :first-of-type pseudo-selector is used to target the first element that matches the selector. Create an h1 .flex span:first-of-type selector to target the first span element in your .flex container. Remember that your span elements are reversed, visually, so this will appear to be the second element on the page.
+Give your new selector a font-size property of 0.7em to make it look like a sub-heading.
+*/
+h1 .flex span:first-of-type{
+    font-size: 0.7em;
+}
+
+/* step-38:  The :last-of-type pseudo-selector does the exact opposite - it targets the last element that matches the selector. Create an h1 .flex span:last-of-type selector to target the last span in your flex container, and give it a font-size property set to 1.2em to make it look like a header.*/
+h1 .flex span:last-of-type{
+    font-size: 1.2em;
+}
+/* step-39: You wrapped your table in a section element - now you can style that to give your table a border. Create a section selector, and give it a max-width property set to 40rem for responsive design. Set the margin property to 0 auto to center it, and set the border property to 2px solid #d0d0d5.*/
+section{
+    max-width: 40rem;
+    margin: 0 auto;
+    border:2px solid #d0d0d5;
+}
+/* step-40:The last part of your table heading is your years. Create a #years selector, and enable flexbox. Justify the content to the end of the flex direction, and make the element sticky. Fix it to the top of its container with top: 0. */
+#years{
+    display:flex;
+    justify-content: flex-end;
+    position: sticky;
+    top:0;
+/* step-41:Now apply some color to your #years. Make the text #fff and the background #0a0a23.*/
+    color:#fff;
+    background-color: #0a0a23;
+/* step-42:The calc() function is a CSS function that allows you to calculate a value based on other values. For example, you can use it to calculate the width of the viewport minus the margin of an element:
+.example {
+  margin: 10px;
+  width: calc(100% - 20px);
+}
+Ensure your years do not get hidden by setting a z-index of 999. Then, give it a margin of 0 -2px, and a padding set to 0.5rem calc(1.25rem + 2px) 0.5rem 0.  */
+    z-index: 999;
+    margin: 0 -2px;
+    padding:0.5rem calc(1.25rem + 2px) 0.5rem 0;
+
+}
+/* step-43: Style the text within your #years element by creating a #years span[class] selector. The span[class] syntax will target any span element that has a class attribute set, regardless of the attribute's value.
+Give your new selector a bold font, a width of 4.5rem, and text aligned to the right.*/
+#years span[class]{
+    font-weight: bold;
+    text-align: right;
+    width: 4.5rem;
+}
+/* step-44:You wrapped your tables in a container with the table-wrap class. Create a selector for that class, and give it a padding set to 0 0.75rem 1.5rem 0.75rem. */
+.table-wrap{
+    padding: 0 0.75rem 1.5rem 0.75rem;
+}
+/* Step 45:Before you start diving in to the table itself, your span elements are currently bolded. Create a span:not(.sr-only) selector and give it a font-weight property set to normal.
+The :not() pseudo-selector is used to target all elements that do not match the selector - in this case, any of your span elements that do not have the sr-only class. This ensures that your earlier rules for the span[class~="sr-only"] selector are not overwritten. */
+/* step-46: Now that you have added the !important keyword, you can remove the :not(.sr-only) from your span selector.*/
+/* span:not(.sr-only){} */
+span{
+font-weight: normal;
+}
+
+/* step-48:Create a table selector to target your tables. Set the border-collapse property to collapse, which will allow cell borders to collapse into a single border, instead of a border around each cell. Also set the border property to 0 to hide the borders themselves. */
+table{
+    border-collapse: collapse;
+    border: 0;
+/* step-49: Ensure your table fills its container with a width property set to 100%, then position it relatively and give it a top margin of 3rem.*/
+    width: 100%;
+    position: relative;
+    margin-top: 3rem;
+}
+/* step-50: Next you need to style your caption elements to look more like headers. Create a table caption selector. Set the text to have a color of #356eaf, a size of 1.3em, and a normal weight.*/
+table caption{
+    color: #356eaf;
+    font-size: 1.3em;
+    font-weight: normal;
+}

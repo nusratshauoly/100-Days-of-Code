@@ -1,20 +1,187 @@
-/* step-33: To prevent unnecessary repetition, target the before pseudo-element of the p element, and give it a content property of "Question #". */
-p::before{
-    content: "Question #";
+/* step-46: To make the navigation buttons look more like typical buttons, remove the underline from the anchor tags.
+Then, create a new selector targeting the navigation list elements so that when the cursor hovers over them, the background color and text color are switched, and the cursor becomes a pointer*/
+li > a{
+    text-decoration: none;
+}
+nav > ul > li:hover{
+	cursor: pointer;
+    background-color: #dfdfe2;
+	color:#1b1b32;
+}
+/* steep-47:Tidy up the header, by using Flexbox to put space between the children, and vertically center them.
+Then, fix the header to the top of the viewport. */
+header {
+    width: 100%;
+      height: 50px;
+      background-color: #1b1b32;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top:0;
+  
+  }
+
+  /* step-48:When the screen width is small, the h1 does not wrap its text content how it should. Align the text for the h1 element in the center.
+Then, give the main padding such that the Student Info section header can be fully seen. */
+h1{
+    text-align: center;
+}
+main{
+    padding-top:25px;
 }
 
-/* step-44: Back to styling the page. Select the list elements within the navigation bar, and give them the following styles:*/
-/*  */
-nav>ul>li{
+/* step-49: On small screens, the unordered list in the navigation bar overflows the right side of the screen.
+Fix this by using Flexbox to wrap the ul content. Then, set the following CSS properties to correctly align the text:
+*/
+nav > ul {
+    display: flex;
+      justify-content: space-evenly;
+    align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+  flex-wrap:wrap;
+  }
 
-    color: #dfdfe2;
-margin: 0 0.2rem;
-padding: 0.2rem;
+  /* step-50: Set the width of the section elements to 80% of their parent container. Then, use margins to center the section elements, adding 10px to the bottom margin.
+  Also, ensure the section elements cannot be larger than 600px in width. */
+
+  section{
+      width: 80%;
+      margin-bottom: 10px;
+      margin-top: 0;
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 600px;
+ }
+/* step-51:Replace the top margin of the h2 elements with 60px of top padding. */
+ h2{
+    padding-top: 60px;
+    margin-top: 0;
+}
+/* step-52: Add padding to the top and left of the .info elements, and set the other values to 0.*/
+.info{
+    
+    padding-top: 1px;
+    padding-left: 1px;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+/* step-53: Give the .formrow elements top margin, and left and right padding. The other padding values should be 0.
+Then, increase the font size for all input elements */
+.formrow{
+   
+    margin-top: 1px;
+    padding-top: 0;
+    padding-right: 1px;
+    padding-bottom: 0;
+    padding-left: 1px;
+}
+input{
+    font-size: 15px;
+}
+/* step-54:To make the first section look more inline, target only the input elements within .info elements, and set their width to 50%, and left-align their text. */
+.info input{
+    width:50%;
+     text-align:left;
+  }
+/* step-55: Target all label elements within .info elements, and set their width to 10%, and make it so they do not take up less than 55px. */
+.info label{
+    width:10%;
+    min-width: 55px;
+
+}
+/* step-56:To align the input boxes with each other, set the display property to inline-block for all input and label elements within .info elements.
+Also, align the text to the right. */
+
+.info label, .info input{
+    text-align: right;
+   display: inline-block;
+}
+
+/* step-57: To neaten the .question-block elements, set the following CSS properties: */
+.question-block{
+    text-align: left;
 display: block;
+width: 100%;
+margin-top: 20px;
+padding-top: 5px;
 }
-/* step-45:On the topic of visual accessibility, contrast between elements is a key factor. For example, the contrast between the text and the background of a heading should be at least 4.5:1.
+/* step-58: Make the paragraph elements appear as a higher priority, with the following CSS properties: */
+p{
+    margin-top: 5px;
+padding-left: 15px;
+font-size: 20px;
+}
 
-Change the font color of all the anchor elements within the list elements to something with a contrast ratio of at least 7:1. */
-li > a {
-	color:#fff
+/* step:59: It is useful to see the default border around the fieldset elements, during development. However, it might not be the style you want.
+Remove the border and bottom padding on the .question elements.*/
+.question{
+     border: none;
+     padding-bottom: 0;
+}
+/* step-60:Remove the default styling for the list items of .answers-list, and remove the unordered list padding. */
+.answers-list{
+    padding: 0;
+    list-style: none;
+}
+
+/* step-61: Give the submit button a freeCodeCamp-style design, with the following CSS properties: */
+
+button{
+    display: block;
+margin: 40px auto;
+width: 40%;
+padding: 15px;
+font-size: 23px;
+background: #d0d0d5;
+border: 3px solid #3b3b4f;
+}
+
+/* step-62:Set the footer background color to #2a2a40, and use Flexbox to horizontally center the text */
+footer{
+    background-color: #2a2a40;
+    display: flex;
+    justify-content: center;
+}
+/* step-63:Now, we cannot read the text. Target the footer and the anchor element within to set the font color to a color of adequate contrast ratio. */
+footer, footer a{
+    color:#f5f6f7;
+}
+/* step-64: Horizontally center all the text within the address element, and add some padding.*/
+address{
+    padding: 1px;
+    text-align: center;
+}
+/* step-65: Clicking on the navigation links should jump the viewport to the relevant section. However, this jumping can be disorienting for some users.
+
+Select all elements, and set the scroll-behavior to smooth.*/
+
+*{
+    scroll-behavior: smooth;
+}
+
+/* step-66:Certain types of motion-based animations can cause discomfort for some users. In particular, people with vestibular disorders have sensitivity to certain motion triggers.
+The @media at-rule has a media feature called prefers-reduced-motion to set CSS based on the user's preferences. It can take one of the following values:
+
+reduce
+no-preference
+
+@media (feature: value) {
+  selector {
+    styles
+  }
+}
+
+Wrap the style rule that sets scroll-behavior: smooth within an @media at-rule with the media feature prefers-reduced-motion having no-preference set as the value.
+
+
+*/
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+        
+    }
 }

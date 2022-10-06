@@ -1,21 +1,16 @@
 # Day-10
-I am learning CSS Flexbox by Building a Photo Gallery.
+I am learning Typography by Building a Nutrition Label.
 
 I learnt the following: 
 
-1. ** * ** Universal Selector : `*`.  
-2. **Box-sizing** Prroperty: `box-sizing: border-box`.    
-3. **Text-transform** property: `text-transform: uppercase`.  
-4. **gallery img selector**: `.gallery img{}`.  
-5. **Object-fit** property: `object-fit: cover`.  
-6. **Border-radius** property: `border-radius:10px`.  
-7. **Display** property: `display: flex`.  
-8. **Flex-direction** property: `flex-direction: row`.  
-9. **Flex-wrap** property: `flex-wrap: wrap`.  
-10. **Justify-content** property: `justify-content: center`.  
-11. **Align-items** property: `align-items: center`.  
-12. **Gap** property: `gap:16px`.  
-13. **::after** pseudo-element: `container::after{content: "";width: 860px;}`.  
+1. **letter-spacing** property:`letter-spacing: 0.15px`.
+2. **clear** property: `clear: right`.
+3. **font-weight** property : `font-weight: 800`.
+4. **float** property: `float:right`.
+5. **height** property: `height:10px`.
+6. **overflow** property: `overflow: hidden`.
+7. **text-indent** property: `text-indent: -8px`.
+8. Modify your .daily-value p selector to exclude the .no-divider elements:`.daily-value p:not(.no-divider){border-bottom: 1px solid #888989;}`.
 
 Check the HTML code [here](./full-code.html)  
-Check the CSS code [here](./full-code.css) 
+Check the CSS code [here](./full-code.css)

@@ -1,8 +1,8 @@
 # Day-24
-I am learning Intermediate CSS by Building a Picasso Painting.
+I am learning Responsive Web Designing by building a Piano.
 
 I learnt the following:
 
 
-Check the HTML code [here](./.html)  
-Check the CSS code [here](./.css)
+Check the HTML code [here](./full-code.html)  
+Check the CSS code [here](./full-code.css)

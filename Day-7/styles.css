@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Montserrat:ital,wght@0,400;1,200&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(19, 17, 21, 0.096);
+    color:white;
+    font-size: 18px;
+    margin: 0;
+    width:100%;
+}
+#title, #description{
+    color:rgba(0, 0, 0, 0.808);
+    margin: .5em auto;
+   text-align: center;
+}
+#title{
+    margin-top: 2em;
+}
+#description{
+    margin-bottom: 2em;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;  
+}
+form{
+    width:60vw;
+    background-color: rgba(0, 0, 0, 0.808);
+    margin: 0 auto;
+    padding-bottom: 2em;
+    padding: 2em;
+    border-radius: 5px;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+fieldset{
+    border: none;
+}
+label{
+    display: block;
+    margin: 1rem auto;
+}
+input,textarea,select{
+    color:rgb(19, 17, 17);
+    font-size: 16px;
+    background-color: whitesmoke;
+    border: 1px solid #0a0a23;
+    border-radius: 3px;
+    padding: .5em;
+    width: 100%; 
+    margin-top: 10px; 
+    
+    
+}
+input,textarea{
+     width: 95%; 
+}
+.inline{
+    width: unset;
+    vertical-align: middle;
+    margin: 0 0.5em 0 0;
+    
+    
+}
+
+
+button[type="submit"]{
+    width:100%;
+    display: block;
+    background-color: green;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 1.1em;
+    color:white;
+    padding: .6em;
+    margin-top: 35px;   
+}

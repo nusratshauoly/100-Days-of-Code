@@ -30,6 +30,8 @@ I learnt the following:
 12. **figcaption element** `<figcaption></figcaption>` : A figure caption (figcaption) element is used to add a caption to describe the image contained within the figure element.
 13. **em element** ` <em>Cat</em>` : You can emphasis with this element.
 14. Add emphasized tag inside paragraph tag.
+15. **Strong element** `<strong></strong>`: The strong element is used to indicate that some text is of strong importance or urgent.
+tribute of input.** `name=""`
 
 
 Check the code [here](./full-code.html)

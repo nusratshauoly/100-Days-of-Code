@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Picasso Painting</title>
-    <link rel="stylesheet" href="./full-code.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   </head>
   <body>
     <div id="back-wall"></div>
     <div class="characters">
       <div id="offwhite-character">
+  
         <div id="white-hat"></div>
         <div id="black-mask">
           <div class="eyes left"></div>
@@ -24,19 +25,27 @@
         </div>
         <div id="tan-table"></div>
       </div>
-      <div id="black-character">
-        <div id="black-hat"></div>
-        <div id="gray-mask">
+
+<!-- step-34:After your div#offwhite-character element, add a div with the id of black-character. -->
+       <div id="black-character">
+<!-- step-35:Within your new black-character element, add three div elements with the following id values, in order: black-hat, gray-mask, white-paper. -->
+         <div id="black-hat"></div>
+         <div id="gray-mask">
+<!-- step-36: The mask needs eyes. Within your gray-mask element, add two div elements. The first should have the class set to eyes left, and the second should have the class set to eyes right.-->
           <div class="eyes left"></div>
           <div class="eyes right"></div>
-        </div>
-        <div id="white-paper">
+         </div>
+         <div id="white-paper">
+<!-- step-37:Within your white-paper element, add four i elements. Give them all a class value of fas fa-music. -->
           <i class="fas fa-music"></i>
           <i class="fas fa-music"></i>
           <i class="fas fa-music"></i>
           <i class="fas fa-music"></i>
-        </div>
-      </div>
+         </div>
+         
+       </div>
+       
+       
     </div>
-</body>
+  </body>
 </html>

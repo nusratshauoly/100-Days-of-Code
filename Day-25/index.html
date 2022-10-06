@@ -1,99 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Picasso Painting</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-  </head>
-  <body>
-    <div id="back-wall"></div>
-    <div class="characters">
-      <div id="offwhite-character">
-        <div id="white-hat"></div>
-        <div id="black-mask">
-          <div class="eyes left"></div>
-          <div class="eyes right"></div>
-        </div>
-        <div id="gray-instrument">
-          <div class="black-dot"></div>
-          <div class="black-dot"></div>
-          <div class="black-dot"></div>
-          <div class="black-dot"></div>
-          <div class="black-dot"></div>
-        </div>
-        <div id="tan-table"></div>
-      </div>
-      <div id="black-character">
-        <div id="black-hat"></div>
-        <div id="gray-mask">
-          <div class="eyes left"></div>
-          <div class="eyes right"></div>
-        </div>
-        <div id="white-paper">
-          <i class="fas fa-music"></i>
-          <i class="fas fa-music"></i>
-          <i class="fas fa-music"></i>
-          <i class="fas fa-music"></i>
-        </div>
-      </div>
-<!-- step-50:Below your black-character element, add two new div elements. These will be the shawl. Give both of them a class of blue. Then give the first one an id of blue-left, and the second an id of blue-right. -->
-       <div class="blue" id="blue-left"></div>
-       <div class="blue" id="blue-right"></div>
-<!-- step-56:Below your blue elements, add another div. Give it the id value of orange-character. -->
-       <div id="orange-character">
-<!-- step-57:Within that orange-character element, add four div elements. Give them the id values of black-round-hat, eyes-div, triangles, and guitar, in order. -->
-        <div id="black-round-hat"></div>
-        <div id="eyes-div">
-<!-- step-58:The eyes-div element should hold some eyes. Add two div elements inside. Give the first a class of eyes left, and give the second a class of eyes right. -->
-            <div class="eyes left"></div>
-            <div class="eyes right"></div>
-        </div>
-        <div id="triangles">
-<!-- step-59:Within the triangles div, you will need to add the elements that will become your triangles. Create thirty div elements and give each of them the class triangle. -->
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-        </div>
-        <div id="guitar">
-<!-- step-30:Within the guitar element, create three div elements. Give the first two a class value of guitar. Then give the first an id of guitar-left, and the second an id of guitar-right. Add an id to the third div with the value guitar-neck. -->
-<!-- step-61:Use another FontAwesome icon for your guitar. Inside both the guitar-left and guitar-right elements, add an i element and give it a class of fas fa-bars. -->
-            <div class="guitar" id="guitar-left">
-                <i class="fas fa-bars"></i>
-            </div>
-            <div class="guitar" id="guitar-right">
-                <i class="fas fa-bars"></i>
-            </div>
-            <div id="guitar-neck"></div>
-        </div>
-       </div>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Documentation page</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+
+        <nav id="navbar">
+            <header class="side-heading">JS Documentation</header>
+                <ul class="sidebar">
+                    <li><a href="#introduction" class="nav-link">Introduction</a></li>
+                    <li><a href="#What_you_should_already_know" class="nav-link">What you should already know</a></li> 
+                    <li><a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java</a></li>
+                    <li><a href="#Hello_world" class="nav-link">Hello world</a></li>
+                    <li><a href="#variables" class="nav-link">Variables</a></li>
+                </ul>
+        </nav>
+
+        <main id="main-doc">
+            <section class="main-section" id="introduction">
+                <header class="heading">Introduction</header>
+                <article>
+                    <p class="description">JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+                    <p class="description">JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+                    <ul>
+                        <li class="list">Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li>
+                        <li class="list">Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section" id="What_you_should_already_know">
+                <header class="heading">What you should already know</header>
+                <article>
+                    <p class="description">This guide assumes you have the following basic background:</p>
+                <ul>
+                <li class="list">A general understanding of the Internet and the World Wide Web (WWW).</li>
+                <li class="list">Good working knowledge of HyperText Markup Language (HTML).</li>
+                <li class="list">Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>
+                </ul>
+                </article>
+            </section>
+            <section class="main-section" id="JavaScript_and_Java">
+                <header class="heading">JavaScript and Java</header>
+                <article>
+                    <p class="description">JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
+                    <p class="description">In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
+                    <p class="description">JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
+                </article>  
+            </section>
+            <section class="main-section" id="Hello_world">
+                <header class="heading">Hello world</header>
+                <article>
+                    <p class="description">To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
+                    <code class="code">
+                        function greetMe(yourName) { alert("Hello " + yourName); }
+                    </code>
+                    <code class="code">greetMe("World");</code>
+                    <p class="description">Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
+                </article>
+            </section>
+            <section class="main-section" id="variables">
+                <header class="heading">Variables</header>
+                <article>
+                    <p class="description">You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
+                    <code class="code">var x = 42.</code>
+                    <p class="description">A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
+                    <code class="code">x = 42.</code>
+                    <p class="description">You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
+                    <code class="code">let y = 13.</code>
+                </article>
+            </section>
+
+        </main>
+    </body>
 </html>
+
+<!-- search in google: how-to-make-a-whole-row-in-a-table-clickable-as-a-link in css -->
+<!-- link: https://search.brave.com/search?q=how-to-make-a-whole-row-in-a-table-clickable-as-a-link+in+css&source=desktop-->
+<!-- stack overflow link : https://stackoverflow.com/questions/44598022/how-do-i-make-an-entire-row-of-a-table-clickable-in-css -->

@@ -4,59 +4,171 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Build a Tribute Page</title>
+    <title>A balance sheet</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main id="main">
-        
-        <h1 id="title">Dr. Norman Borlaug</h1>
-        <p class="title-description">The man who saved a billion lives</p>
+<!-- step-2: Within your body element, nest a section element within a main element.-->
+    <main>
+        <section>
+<!-- step-3:Within your section element, add an h1 element with a nested span element. -->
+<!-- step-4:Give your existing span the class attribute set to flex, and add two span elements within it. Give the first the text AcmeWidgetCorp. Give the second the text Balance Sheet. You will use CSS to reverse the order of the text on the page, but the HTML order will make more sense for a screen reader. -->
+            <h1><span class="flex">
+                    <span>AcmeWidgetCorp</span>
+                    <span>Balance Sheet</span>
+            </span></h1>
+<!-- step-5:Below your h1 element, create a div element. Give it an id attribute set to years. You want this particular element to be hidden from screen readers, so give it the aria-hidden attribute set to true. -->
+            <div id="years" aria-hidden="true">
+<!-- step-6:Within your div element, add three span elements. Give each of them a class attribute set to year, and add the following text (in order): 2019, 2020, and 2021. -->
+                <span class="year">2019</span>
+                <span class="year">2020</span>
+                <span class="year">2021</span>
+            </div>
+<!-- step-7: Below your existing div element, add a new div element with a class set to table-wrap. This will be the container for your tables.
+Within that, add three table elements. You will be using CSS to style these into a single table, but using separate tables will help screen readers understand the document flow. -->
+            <div class="table-wrap">
+                <table>
+<!-- step-8:HTML tables use the caption element to describe what the table is about. The caption element should always be the first child of a table, but can be positioned with the caption-side CSS property.
+Add a caption element to your first table, and give it the text Assets. -->
+                    <caption>Assets</caption>
+<!-- step-9: Add a thead and tbody to your first table, below the caption element.-->
+                    <thead>
+<!-- step-10: The tr element is used to indicate a table row. Add a tr element within your thead element. In your new tr element, add a td element, followed by three th elements.
+The td element indicates a data cell, while the th element indicates a header cell.-->
+                        <tr>
+<!-- step-11: Within each of your new th elements, nest a span element with the class set to sr-only year. Give them the following text (in order): 2019, 2020, and 2021.
+Give your third th element the class attribute set to current.
+Leave the td element empty. This element exists only to ensure your table has a four-column layout and associate the headers with the correct columns.
+Within each of your new th elements, nest a span element with the class set to sr-only year. Give them the following text (in order): 2019, 2020, and 2021.
+Give your third th element the class attribute set to current.
+Leave the td element empty. This element exists only to ensure your table has a four-column layout and associate the headers with the correct columns.-->
+                            <td></td>
+                            <th><span class="sr-only year">2019</span></th>
+                            <th><span class="sr-only year">2020</span></th>
+                            <th class="current"><span class="sr-only year">2021</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+<!-- step-12: Within your tbody element, add four tr elements. Give the first three a class attribute set to data, and the fourth a class attribute set to total.-->
+                        <tr class="data">
+<!-- step-13:In your first tr, add a th element with the text Cash This is the cash we currently have on hand.. Wrap all of that text except Cash in a span element with the class set to description.
+Following that, add three td elements with the following text (in order): $25, $30, $28. Give the third td element a class attribute set to current. -->
+                            <th>Cash <span class="description">This is the cash we currently have on hand</span></th>
+                            <td>$25</td>
+                            <td>$30</td>
+                            <td class="current">$28</td>
+                        </tr>
+                        <tr class="data">
+  <!--step-14:In your second tr element, add a th element with the text Checking Our primary transactional account.. Wrap that text, except for Checking , in a span element with the class attribute set to description.
+Following that, add three td elements with the following text (in order): $54, $56, $53. Give the third td element a class attribute set to current.-->
+                           <th>Checking <span class="description">Our primary transactional account.</span> </th>
+                           <td>$54</td>
+                           <td>$56</td>
+                           <td class="current">$53</td>
+                           
+                        </tr>
+                        <tr class="data">
+<!-- step-15:In your third tr element, add a th element with the text Savings Funds set aside for emergencies.. Wrap that text, except for Savings , in a span element with the class attribute set to description.
+Following that, add three td elements with the following text (in order): $500, $650, $728. Give the third td element a class attribute set to current.
 
-        <div id="img-div">
-            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg" id="image" alt="">
-            <figcaption id="img-caption">Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.</figcaption>
-        </div>
-        
-        <div>
-            <h4 id="tribute-info">Here's a time line of Dr. Borlaug's life:</h4>
+ -->
+                            <th>Savings <span class="description">Funds set aside for emergencies.</span></th>
+                            <td>$500</td>
+                            <td>$650</td>
+                            <td class="current">$728</td>
+                        </tr>
+                        <tr class="total">
+<!-- step-16:In your fourth tr element, add a th element with the text Total Assets. Wrap the text Assets in a span element with the class attribute set to sr-only.
+Following that, add three td elements with the following text (in order): $579, $736, $809. Give the third td element a class attribute set to current. -->
+                            <th>Total <span class="sr-only">Assets</span> </th>
+                            <td>$579</td>
+                            <td>$736</td>
+                            <td class="current">$809</td>
+                        </tr>
+                    </tbody>
+                </table>
+<!-- step-17:Time to move on to your second table. Start by giving it a caption element set to Liabilities. Then add your thead and tbody. -->
+                <table>
+                    <caption>Liabilities</caption>
+                    <thead>
+<!-- step-18:Within your thead, add a tr. Inside that, add a td and three th elements. -->
+                        <tr>
+                            <td></td>
+<!-- step-19:Give each th element a span element with the class set to sr-only and the following text, in order: 2019, 2020, and 2021. -->
+                            <th><span class="sr-only">2019</span></th>
+                            <th><span class="sr-only">2020</span></th>
+                            <th><span class="sr-only">2021</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+<!-- step-20:Within the tbody element, add four tr elements. Give the first three the class attribute set to data, and the fourth the class attribute set to total.-->
+                        <tr class="data">
+<!-- step-21: Within the first tr, add a th element with the text Loans The outstanding balance on our startup loan.. Wrap that text, except for Loans , within a span element with the class set to description.
+Add three td elements below that, and give them the following text, in order: $500, $250, and $0. Give the third td element a class set to current. -->
+                            <th>Loans <span class="description">The outstanding balance on our startup loan.</span></th>
+                            <td>$500</td>
+                            <td>$250</td>
+                            <td class="current">$0</td>
+                        </tr>
+                        <tr class="data">
+<!-- step-22: Within the second tr, add a th element with the text Expenses Annual anticipated expenses, such as payroll.. Wrap that text, except for Expenses , within a span element with the class set to description.
+Add three td elements below that, and give them the following text, in order: $200, $300, and $400. Give the third td element a class set to current.-->
+                           <th>Expenses <span class="description">Annual anticipated expenses, such as payroll.</span> </th>
+                           <td>$200</td>
+                           <td>$300</td>
+                           <td class="current">$400</td>
+                        </tr>
+                        <tr class="data">
+<!-- step-23: Within the third tr, add a th element with the text Credit The outstanding balance on our credit card.. Wrap that text, except for Credit , within a span element with the class set to description.
+Add three td elements below that, and give them the following text, in order: $50, $50, and $75. Give the third td element a class set to current -->
+                            <th>Credit <span class="description">The outstanding balance on our credit card.</span></th>
+                            <td>$50</td>
+                            <td>$50</td>
+                            <td class="current">$75</td>
+                            
+                        </tr>
+                        <tr class="total">
+<!-- step-24:In your fourth tr element, add a th element with the text Total Liabilities. Wrap the text Liabilities in a span element with the class attribute set to sr-only.
+Following that, add three td elements with the following text (in order): $750, $600, $475. Give the third td element a class attribute set to current. -->
+                            <th>
+                                Total <span class="sr-only">Liabilities</span> 
+                            </th>
+                            <td>$750</td>
+                            <td>$600</td>
+                            <td class="current">$475</td>
+                        </tr> 
+                    </tbody>
+                </table>
+                <table>
+<!-- step-25:For your third table, add a caption with the text Net Worth, and set up a table header and table body. -->
+                     <caption>Net Worth</caption>
+                     <thead>
+<!-- step-26:Within your thead, create a tr element. In that, add a td and three th elements. Within each of the th elements, add a span element with the class set to sr-only and the following text, in order: 2019, 2020, and 2021.-->
+                         <tr>
+                             <td></td>
+                             <th> <span class="sr-only">2019</span></th>
+                             <th> <span class="sr-only">2020</span></th>
+                             <th> <span class="sr-only">2021</span></th>
+                         </tr>
+                     </thead>
+                     <tbody>
+<!-- step-27:Within the tbody, add a tr with the class set to total. In that, add a th with the text Total Net Worth, and wrap Net Worth in a span with the class set to sr-only.
 
-            <ul class="info">
-                <p><li><b>1914</b> - Born in Cresco, Iowa</li></p>
-                <p><li><b>1933</b> - Leaves his family's farm to attend the University of Minnesota, thanks to a Depression era program known as the "National Youth Administration"</li></p>
-                <p><li><b>1935</b> - Has to stop school and save up more money. Works in the Civilian Conservation Corps, helping starving Americans. "I saw how food changed them", he said. "All of this left scars on me."</li></p>
-                <p><li><b>1937</b> - Finishes university and takes a job in the US Forestry Service
-                </li></p>
-                <p><li><b>1938</b> - Marries wife of 69 years Margret Gibson. Gets laid off due to budget cuts. Inspired by Elvin Charles Stakman, he returns to school study under Stakman, who teaches him about breeding pest-resistent plants.</li></p>
-                <p><li><b>1941</b> - Tries to enroll in the military after the Pearl Harbor attack, but is rejected. Instead, the military asked his lab to work on waterproof glue, DDT to control malaria, disinfectants, and other applied science.</li></p>
-                <p><li><b>1942</b> - Receives a Ph.D. in Genetics and Plant Pathology</li></p>
-                <p><li><b>1944</b> - Rejects a 100% salary increase from Dupont, leaves behind his pregnant wife, and flies to Mexico to head a new plant pathology program. Over the next 16 years, his team breeds 6,000 different strains of disease resistent wheat - including different varieties for each major climate on Earth.</li></p>
-                <p><li><b>1945</b> - Discovers a way to grown wheat twice each season, doubling wheat yields</li></p>
-                <p><li><b>1953</b> - crosses a short, sturdy dwarf breed of wheat with a high-yeidling American breed, creating a strain that responds well to fertilizer. It goes on to provide 95% of Mexico's wheat.</li></p>
-                <p><li><b>1962</b> - Visits Delhi and brings his high-yielding strains of wheat to the Indian subcontinent in time to help mitigate mass starvation due to a rapidly expanding population</li></p>
-                <p><li><b>1970</b> - receives the Nobel Peace Prize</li></p>
-                <p><li><b>1983</b> - helps seven African countries dramatically increase their maize and sorghum yields</li></p>
-                <p><li><b>1984</b> - becomes a distinguished professor at Texas A&M University</li></p>
-                <p><li><b>2005</b> - states "we will have to double the world food supply by 2050." Argues that genetically modified crops are the only way we can meet the demand, as we run out of arable land. Says that GM crops are not inherently dangerous because "we've been genetically modifying plants and animals for a long time. Long before we called it science, people were selecting the best breeds."</li></p>
-                <p><li><b>2009</b> - dies at the age of 95.</li></p>
-            </ul>
-        </div>
+Then add three td elements, giving the third a class set to current, and giving each the following text: $-171, $136, $334.
 
-        <div>
-            <blockquote><i>"Borlaug's life and achievement are testimony to the far-reaching contribution that one man's towering intellect, persistence and scientific vision can make to human peace and progress."</i> 
-            </blockquote>
-        
-            <blockquote>
-            <i>-- Indian Prime Minister Manmohan Singh</i>
-            </blockquote>
-
-        <div >
-            <h4>If you have time, you should read more about this incredible human being on his</h4>
-            <a href="https://en.wikipedia.org/wiki/Norman_Borlaug" target="_blank" id="tribute-link" alt="About Dr.Norman Borlaug">wikipedia entry</a>
-           
-        </div>
-        
-
+ -->
+                        <tr class="total">
+                        <th>
+                            Total  <span class="sr-only">Net Worth</span> 
+                        </th>
+                        <td>$-171</td>
+                        <td>$136</td>
+                        <td class="current">$334</td>
+                    </tr> 
+                     </tbody>
+                </table>
+            </div>
+        </section>
     </main>
 </body>
 </html>

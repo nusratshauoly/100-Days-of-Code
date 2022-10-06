@@ -1,17 +1,166 @@
-/* step-28: Time to style your table. Start by resetting the box model. Create an html selector and give it a box-sizing property set to border-box.*/
-html{
+span[class~="sr-only"] {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
+    -webkit-clip-path: inset(50%) !important;
+    height: 1px !important;
+    width: 1px !important;
+    position: absolute !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    padding: 0 !important;
+    margin: -1px !important;
+  }
+  
+  html {
     box-sizing: border-box;
-}
-/* step-29:Create a body selector and give it a font-family property set to sans-serif and a color set to #0a0a23. */
-body{
+  }
+  
+  body {
     font-family: sans-serif;
     color: #0a0a23;
-}
-/* step-30: Before you get too far into your styling, you should make use of the sr-only class. You can use CSS to make elements with this class completely hidden from the visual page, but still be announced by screen readers.
-
-The CSS you are about to write is a common set of properties used to ensure elements are completely hidden visually.
-
-The span[class~="sr-only"] selector will select any span element whose class includes sr-only. Create that selector, and give it a border property set to 0.*/
-span[class~="sr-only"]{
+  }
+  
+  h1 {
+    max-width: 37.25rem;
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem;
+  }
+  
+  h1 .flex {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  
+  h1 .flex span:first-of-type {
+    font-size: 0.7em;
+  }
+  
+  h1 .flex span:last-of-type {
+    font-size: 1.2em;
+  }
+  
+  section {
+    max-width: 40rem;
+    margin: 0 auto;
+    border: 2px solid #d0d0d5;
+  }
+  
+  #years {
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    background: #0a0a23;
+    color: #fff;
+    z-index: 999;
+    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+    margin: 0 -2px;
+  }
+  
+  #years span[class] {
+    font-weight: bold;
+    width: 4.5rem;
+    text-align: right;
+  }
+  
+  .table-wrap {
+    padding: 0 0.75rem 1.5rem 0.75rem;
+  }
+  
+  span {
+    font-weight: normal;
+  }
+  
+  table {
+    border-collapse: collapse;
     border: 0;
+    width: 100%;
+    position: relative;
+    margin-top: 3rem;
+  }
+  table caption {
+    color: #356eaf;
+    font-size: 1.3em;
+    font-weight: normal;
+/* step-51: Now give the captions an absolute position, and shift them -2.25rem from the top and 0.5rem from the left. */
+    position: absolute;
+    top:-2.25rem;
+    left:0.5rem;
+}
+/* step-52: Create a selector to target your td elements within your table body. Give them a width to fill the viewport, with a minimum and maximum of 4rem. This approach ensures that the width is fixed, whereas setting width specifically would allow the elements to shrink to the container (because we are using flexbox).*/
+tbody td{
+  width: 100vw;
+  min-width: 4rem;
+  max-width: 4rem;
+}
+
+/* step-53:Now target the th elements within your table body, and give them a width of the entire container, less 12rem */
+tbody th{
+  width:calc(100% - 12rem);
+}
+/* step-54: The [attribute="value"] selector targets any element that has an attribute with a specific value. Create a tr[class="total"] selector to target specifically your tr elements with the total class. Give it a bottom border of 4px double #0a0a23 and make the font bold. */
+
+tr[class="total"]{
+  font-weight: bold;
+   border-bottom: 4px double #0a0a23;
+}
+/* step-55: Using the same selector syntax, target the th elements within your table rows where the class is total. Align the text to the left, and give them a padding of 0.5rem 0 0.25rem 0.5rem.*/
+tr[class="total"] th{
+  text-align: left;
+  padding: 0.5rem 0 0.25rem 0.5rem;
+}
+/* step-56:  The key difference between tr[class="total"] and tr.total is that the first will select tr elements where the only class is total. The second will select tr elements where the class includes total.
+In your case, tr.total will work. You can use this selector to target all td elements within your .total rows. Align the text to the right, and give them a padding of 0 0.25rem.*/
+
+tr.total td{
+  text-align: right;
+  padding: 0 0.25rem;
+}
+/* step-57: The :nth-of-type() pseudo-selector is used to target specific elements based on their order among siblings of the same type. Use this pseudo-selector to target the third td element within your total table rows. Give it a right padding of 0.5rem.*/
+tr.total td:nth-of-type(3){
+  padding: 0.5rem;
+}
+/* step-58: Give your tr.total elements a hover effect that changes the background to #99c9ff.*/
+tr.total:hover{
+  background-color:#99c9ff;
+}
+/* step-59: Select your td elements with the class value of current, and make the font italic.*/
+td.current{
+  font-style: italic;
+}
+/* step-60:Select the tr elements with the class set to data. Give them a background image of linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem). */
+tr.data{
+  background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem) ;
+}
+/* step-61:Select the th elements within your tr.data elements. Align the text to the left, and give them a top padding of 0.3rem and a left padding of 0.5rem. */
+tr.data th{
+  padding-top: 0.3rem;
+  padding-left: 0.5rem;
+  text-align: left;
+}
+
+/* step-62:Create a tr.data th .description selector to target the elements with the class set to description that are within your th elements in your .data table rows. Give them a block display, make the text italic with a normal weight, and position them with a padding set to 1rem 0 0.75rem and a right margin of -13.5rem. */
+tr.data th .description{
+  display:block;
+  font-style: italic;
+  font-weight: normal;
+  padding: 1rem 0 0.75rem;
+  margin-right: -13.5rem;
+}
+/* step-63: Your span elements now all have more specific styling, which means you can remove your span rule. */
+/* span {
+  font-weight: normal;
+} */
+
+/*step-64: Your dollar amounts are currently misaligned. Create a selector to target the td elements within your tr.data elements. Vertically align the text to the top, horizontally align the text to the right, and set the padding to 0.3rem 0.25rem 0. */
+tr.data td{
+  vertical-align: top;
+  text-align: right;
+  padding: 0.3rem 0.25rem 0;
+}
+/* step-65: Create another selector for the td elements within your tr.data element, but specifically select the last one. Give this a right padding of 0.5rem. */
+tr.data td:last-of-type{
+  padding-right: 0.5rem;
 }

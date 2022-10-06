@@ -1,128 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
-    <title>Accessibility Quiz</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
-      <h1>HTML/CSS Quiz</h1>
-      <nav>
-        <ul>
-<!-- step-67:Finally, the navigation accessibility can be improved by providing keyboard shortcuts.
-The accesskey attribute accepts a space-separated list of access keys. For example:
-<button type="submit" accesskey="s">Submit</button>
-Give each of the navigation links a single-letter access key.
-Note: It is not always advised to use access keys, but they can be useful
-Well done. You have completed the Accessibility Quiz practice project.
--->
-          <li><a href="#student-info" accesskey="s">INFO</a></li>
-          <li><a href="#html-questions" accesskey="s">HTML</a></li>
-          <li><a href="#css-questions" accesskey="s">CSS</a></li>
-			  </ul>
-      </nav>
-    </header>
-    <main>
-      <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
-        <section role="region" aria-labelledby="student-info">
-          <h2 id="student-info">Student Info</h2>
-          <div class="info">
-            <label for="student-name">Name:</label>
-            <input type="text" name="student-name" id="student-name" />
-          </div>
-          <div class="info">
-            <label for="student-email">Email:</label>
-            <input type="email" name="student-email" id="student-email" />
-          </div>
-          <div class="info">
-            <label for="birth-date">D.O.B.<span class="sr-only">(Date of Birth)</span></label>
-            <input type="date" name="birth-date" id="birth-date" />
-          </div>
-        </section>
-        <section role="region" aria-labelledby="html-questions">
-          <h2 id="html-questions">HTML</h2>
-          <div class="question-block">
-            <p>1</p>
-            <fieldset class="question" name="html-question-one">
-              <legend>
-                The legend element represents a caption for the content of its
-                parent fieldset element
-              </legend>
-              <ul class="answers-list">
-                <li>
-                  <label for="q1-a1">
-                    <input type="radio" id="q1-a1" name="q1" value="true" />
-                    True
-                  </label>
-                </li>
-                <li>
-                  <label for="q1-a2">
-                    <input type="radio" id="q1-a2" name="q1" value="false" />
-                    False
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <div class="question-block">
-            <p>2</p>
-            <fieldset class="question" name="html-question-two">
-              <legend>
-                A label element nesting an input element is required to have a
-                for attribute with the same value as the input's id
-              </legend>
-              <ul class="answers-list">
-                <li>
-                  <label for="q2-a1">
-                    <input type="radio" id="q2-a1" name="q2" value="true" />
-                    True
-                  </label>
-                </li>
-                <li>
-                  <label for="q2-a2">
-                    <input type="radio" id="q2-a2" name="q2" value="false" />
-                    False
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-        </section>
-        <section role="region" aria-labelledby="css-questions">
-          <h2 id="css-questions">CSS</h2>
-          <div class="formrow">
-            <div class="question-block">
-              <label for="customer">Are you a frontend developer?</label>
-            </div>
-            <div class="answer">
-              <select name="customer" id="customer" required>
-                <option value="">Select an option</option>
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-              </select>
-            </div>
-            <div class="question-block">
-              <label for="css-questions">Do you have any questions:</label>
-            </div>
-            <div class="answer">
-              <textarea id="css-questions" name="css-questions" rows="5" cols="24" placeholder="Who is flexbox..."></textarea>
-            </div>
-          </div>
-        </section>
-        <button type="submit">Submit</button>
-      </form>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Tribute Page</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+    <main id="main">
+        
+        <div class="center" >
+        <h1 id="title">Dr. Norman Borlaug</h1> 
+        <p>The man who saved a billion lives</p>
+        </div>
+        <div id="img-div">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg" id="image" alt="" style="display:block;max-width: 100%;">
+            <figcaption id="img-caption">Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.</figcaption>
+        </div>
+        
+        <div class="body-center">
+            <h3>Here's a time line of Dr. Borlaug's life:</h3>
+        </div>
+
+        
+            <ul id="tribute-info">
+                <p></p><li><b>1914</b> - Born in Cresco, Iowa</li></p>
+                <p><li><b>1933</b> - Leaves his family's farm to attend the University of Minnesota, thanks to a Depression era program known as the "National Youth Administration"</li></p>
+                <p><li><b>1935</b> - Has to stop school and save up more money. Works in the Civilian Conservation Corps, helping starving Americans. "I saw how food changed them", he said. "All of this left scars on me."</li></p>
+                <p><li><b>1937</b> - Finishes university and takes a job in the US Forestry Service
+                </li></p>
+                <p><li><b>1938</b> - Marries wife of 69 years Margret Gibson. Gets laid off due to budget cuts. Inspired by Elvin Charles Stakman, he returns to school study under Stakman, who teaches him about breeding pest-resistent plants.</li></p>
+                <p><li><b>1941</b> - Tries to enroll in the military after the Pearl Harbor attack, but is rejected. Instead, the military asked his lab to work on waterproof glue, DDT to control malaria, disinfectants, and other applied science.</li></p>
+                <p><li><b>1942</b> - Receives a Ph.D. in Genetics and Plant Pathology</li></p>
+                <p><li><b>1944</b> - Rejects a 100% salary increase from Dupont, leaves behind his pregnant wife, and flies to Mexico to head a new plant pathology program. Over the next 16 years, his team breeds 6,000 different strains of disease resistent wheat - including different varieties for each major climate on Earth.</li></p>
+                <p><li><b>1945</b> - Discovers a way to grown wheat twice each season, doubling wheat yields</li></p>
+                <p><li><b>1953</b> - crosses a short, sturdy dwarf breed of wheat with a high-yeidling American breed, creating a strain that responds well to fertilizer. It goes on to provide 95% of Mexico's wheat.</li></p>
+                <p><li><b>1962</b> - Visits Delhi and brings his high-yielding strains of wheat to the Indian subcontinent in time to help mitigate mass starvation due to a rapidly expanding population</li></p>
+                <p><li><b>1970</b> - receives the Nobel Peace Prize</li></p>
+                <p><li><b>1983</b> - helps seven African countries dramatically increase their maize and sorghum yields</li></p>
+                <p><li><b>1984</b> - becomes a distinguished professor at Texas A&M University</li></p>
+                <p><li><b>2005</b> - states "we will have to double the world food supply by 2050." Argues that genetically modified crops are the only way we can meet the demand, as we run out of arable land. Says that GM crops are not inherently dangerous because "we've been genetically modifying plants and animals for a long time. Long before we called it science, people were selecting the best breeds."</li></p>
+                <p><li><b>2009</b> - dies at the age of 95.</li></p>
+            </ul>
+            <div id="tribute-info">   
+            <blockquote><i>"Borlaug's life and achievement are testimony to the far-reaching contribution that one man's towering intellect, persistence and scientific vision can make to human peace and progress."</i> 
+            </blockquote>
+        
+            <blockquote>
+            <i>-- Indian Prime Minister Manmohan Singh</i>
+            </blockquote>
+        </div>
+        <div class="quote">
+            <h3>If you have time, you should read more about this incredible human being on his</h3>
+            <a href="https://en.wikipedia.org/wiki/Norman_Borlaug" target="_blank" id="tribute-link" alt="About Dr.Norman Borlaug">wikipedia entry</a>
+            
+        </div>
     </main>
-    <footer>
-      <address>
-        <a href="https://freecodecamp.org">freeCodeCamp</a><br />
-        San Francisco<br />
-        California<br />
-        USA
-      </address>
-    </footer>
-  </body>
+</body>
 </html>
+<!-- #img-div{
+    margin: auto;
+}
+#image{
+    max-width: 100%;
+    height: auto;
+}
+img{
+    display: block;
+}
+ -->
