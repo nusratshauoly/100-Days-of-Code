@@ -254,3 +254,16 @@ More Info [here](./Day-39/Day-39.md)
 
 
 More Info [here](./Day-40/Day-40.md)
+
+## Day-41  
+
+
+
+More Info [here](./Day-41/Day-41.md)
+
+
+## Day-42  
+
+
+
+More Info [here](./Day-42/Day-42.md)
