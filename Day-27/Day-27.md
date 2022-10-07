@@ -1,8 +1,8 @@
-# Day-32
+# Day-27
 
 
 I learnt the following:
 
 
-Check the HTML code [here](./index.html)  
-Check the CSS code [here](./styles.css)
+Check the HTML code [here](./.html)  
+Check the CSS code [here](./.css)
