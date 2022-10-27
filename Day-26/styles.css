@@ -1,12 +1,16 @@
 /* step-25: That didn't work, because the variables you declared in .bb1 do not cascade to the .bb2 and .bb3 sibling elements. That's just how CSS works. Because of this, variables are often declared in the :root selector. This is the highest level selector in CSS; putting your variables there will make them usable everywhere. Add the :root selector to the top of your stylesheet, and move all your variable declarations there. */
 :root{
+
     --building-color1: #aa80ff;
     --building-color2: #66cc99;
     --building-color3: #cc6699;
 /* step-27: Create another variable named --building-color4 and give it a value of #538cc6. Make sure it's in the :root selector this time. Then use it to fill in the last building.*/
 --building-color4:  #538cc6;
 /* step-39: Create a new variable in :root called --window-color1 and give it a value of black. This will be a secondary color for the purple buildings. */
---window-color1: black;
+/* step-95: With CSS variables you can change values without searching everywhere in the stylesheet. Change the --window-color1 value to #bb99ff.
+ */
+/* --window-color1: black; */
+--window-color1: #bb99ff;
 /* step-50: Create a new variable in :root named window-color2 with a value of #8cd9b3. This will be used as the secondary color for this building.
  */
  --window-color2: #8cd9b3;
@@ -14,10 +18,12 @@
  --window-color3: #d98cb3;
  /* step-68: Create a new variable called --window-color4 in :root and give it a value of #8cb3d9. This will be the secondary color for the last background building. */
  --window-color4: #8cb3d9;
+
 }
 /* step-5: In CSS, you can target everything with an asterisk. Add a border to everything by using the * selector, and giving it a border of 1px solid black. This is a trick that helps visualize where elements are and their size. You will remove this later.*/
 *{
-   border: 1px solid black;
+/* step-110: Okay, the buildings are done. Go back to the * selector and remove the border you applied to everything at the beginning and the buildings will come together. */
+   /* border: 1px solid black; */
 /* step-6: Also add a box-sizing of border-box to everything. This will make it so the border you added doesn't add any size to your elements.
 */
    box-sizing: border-box;
@@ -58,7 +64,10 @@ This will be used in a few places to center window elements vertically, and even
     align-items: center; 
     justify-content: space-evenly;
 }
-
+/* step- 113: At the top of the sky gradient color list, where you would put a direction for the gradient; add circle closest-corner at 15% 15%,. This will move the start of the gradient to 15% from the top and left. It will make it end at the closest-corner and it will maintain a circle shape. These are some keywords built into gradients to describe how it behaves. */
+.sky{
+    background: radial-gradient(circle closest-corner at 15% 15%,  #ffcf33 0%,#ffcf33 20%, #ffff66 21%, #bbeeff 100%);
+}
 /* BACKGROUND BUILDINGS - "bb" stands for "background building" */
  .bb1{
     width: 10%;
@@ -329,23 +338,88 @@ border-right: 5vw solid transparent;
     height: 35%;
     background-color: var(--building-color1);
 }
+/* step-93: Give the .fb3-window elements a width of 25%, a height of 80%, and use your --window-color1 variable as the background-color value.
+ */
+.fb3-window{
+    width: 25%;
+    height: 80%;
+    background-color: var(--window-color1);
+} 
 /* step-37: Move the position of .fb4 relative to where it is now by adding a position of relative and left of 10% to it. Do the same for .fb5 but use right instead of left. This will cover up the remaining white space in between the buildings. */
 .fb4{
     position: relative;
     left: 10%;
     width:8%;
     height:45%;
-    background-color: var(--building-color1);
+    /* background-color: var(--building-color1); */
 }
+/* step-103: This building is going to have another triangle on top. Give the top section a border-top of 5vh solid transparent, and a border-left that is 8vw, solid, and uses your building color variable as the color. */
+.fb4a{
+    border-top: 5vh solid transparent;
+    border-left: 8vw solid var(--building-color1);
+}
+/* step-97: Give .fb4b a width of 100% and height of 89%. */
+.fb4b{
+    width: 100%;
+    height: 89%;
+/* step-98: Add your --building-color1 variable as value of the background-color property of .fb4b. Then, remove the background-color from .fb4. */
+    background-color: var(--building-color1);
+/* step-102: Add display: flex and flex-wrap: wrap to the window container. This will put your windows side by side, and then push them down to a new row when they don't fit. */
+    display: flex;
+    flex-wrap: wrap;
+}
+/* step-100: Give the .fb4-window elements a width of 30%, height of 10%, and border-radius of 50%. These will make some circular windows for this building. */
+/* step-101: Fill in the windows with your secondary color for this building. Also add a margin of 10% to give the windows some space. */
+.fb4-window{
+    width: 30%;
+    height: 10%;
+    border-radius: 50%;
+    margin: 10%;
+    background-color: var(--window-color1);
+}
+/* step-104: On to the next building! It's the green one in the foreground. Give it a repeating-linear-gradient with your building color from 0% to 5%, and transparent from 5% to 10%.
+ */
 .fb5{
     position: relative;
     right: 10%;
     width:10%;
     height:33%;
-    background-color: var(--building-color2);
+/* step-106: You don't need the background-color for this building anymore so you can remove that property. */
+    /* background-color: var(--building-color2); */
+    background: repeating-linear-gradient(var(--building-color2) 0%, var(--building-color2) 5%, transparent 5%, transparent 10%), repeating-linear-gradient(90deg, var(--building-color2) 0%, var(--building-color2) 12%, var(--window-color2) 12%, var(--window-color2) 44%);
 }
 .fb6{
     width:9%;
     height: 38%;
-    background-color: var(--building-color3);
+    /* step-109: You can remove the background-color for this building now, since it isn't needed. */
+
+    /* background-color: var(--building-color3); */
+
+/* step-107:Finally! You made it to the last building! Add a repeating gradient to it with a 90deg direction. Use the building color from 0% to 10% and transparent from 10% to 30%.  */
+    background: repeating-linear-gradient(90deg, var(--building-color3) 0%, var(--building-color3) 10%, transparent 10%, transparent 30%), repeating-linear-gradient(var(--building-color3) 0%, var(--building-color3) 10%, var(--window-color3) 10%, var(--window-color3) 30%);
+}
+
+/* step-114: Add an empty media query at the bottom of your stylesheet with a condition of max-width: 1000px. Styles added in here will take effect when the document size is 1000px wide or less.
+ */
+ @media (max-width: 1000px){
+    :root{
+        /*step-117: Add a :root selector to the top of your media query. Then redefine all four of the --building-color variables to use the value #000 there.  */
+    --building-color1: #000;
+    --building-color2: #000;
+    --building-color3: #000;
+    --building-color4: #000;
+
+    --window-color1: #777;
+    --window-color2: #777;
+    --window-color3: #777;
+    --window-color4: #777;
+    
+    }
+/* step-115: Copy and paste your whole sky class along with all of its properties and values into the media query. You are going to make another color scheme for the skyline that changes it from day to night.
+
+Note: You are going to need to scroll past the editable region to copy the class. */
+/* step-116: In the sky class of the media query, change the two #ffcf33 color values to #ccc, the #ffff66 to #445, and the #bbeeff to #223. Then you can resize your window to see the background change colors. */
+    .sky{
+        background: radial-gradient(circle closest-corner at 15% 15%,  #ccc 0%,#ccc 20%, #445 21%, #223 100%);
+    }
 }

@@ -165,7 +165,7 @@ I am learning to build a Technical Documentation Page.
 More Info [here](./Day-25/Day-25.md)
 
 ## Day-26  
-
+I am learning CSS variables by Building a City Skyline.
 
 
 More Info [here](./Day-26/Day-26.md)

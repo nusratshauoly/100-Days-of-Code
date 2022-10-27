@@ -1,125 +1,137 @@
 <!-- step-1: Welcome to the CSS Variables Skyline project! Start by adding the !DOCTYPE html declaration at the top of the document so the browser knows what type of document it's reading.-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- step-4:Within the head, nest a meta element with a charset of UTF-8, a title element with a title of City Skyline, and a link element that links your styles.css file. -->
-    <title>City Skyline</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-    <!-- step-8:Create a div element in the body with a class of background-buildings. This will be a container for a group of buildings. -->
+    <head>
+        <meta charset="UTF-8">  
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- step-4:Within the head, nest a meta element with a charset of UTF-8, a title element with a title of City Skyline, and a link element that links your styles.css file. -->
+        <title>City Skyline</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <!-- step-8:Create a div element in the body with a class of background-buildings. This will be a container for a group of buildings. -->
 
- 
-    <div class="background-buildings">
-<!-- step-21: The buildings are too spaced out. Squeeze them together by adding two empty div elements to the top of the .background-buildings element, two more at the bottom of it, and one more in between .bb3 and .bb4. These will be added as evenly-spaced elements across the container, effectively moving the buildings closer to the center.
+    <!-- step-111: Add sky as a second class to the .background-buildings element. You are going to make a background for the skyline. -->
+        <div class="background-buildings sky">
+    <!-- step-21: The buildings are too spaced out. Squeeze them together by adding two empty div elements to the top of the .background-buildings element, two more at the bottom of it, and one more in between .bb3 and .bb4. These will be added as evenly-spaced elements across the container, effectively moving the buildings closer to the center.
 
--->
-       <div></div>
-       <div></div>
-<!-- step-10:Nest a div with a class of bb1 in the background buildings container. Open your styles.css file, and give .bb1 a width of 10% and height of 70%. "bb" stands for "background building", this will be your first building.-->
-<!-- step-67: Add the new building-wrap class to the .bb1 and .bb4 elements. This will apply the centering properties to the buildings that need it. -->
-       <div class="bb1 building-wrap">
-<!-- step-11:Nest four div elements in the .bb1 container. Give them the classes bb1a, bb1b, bb1c, and bb1d in that order. This building will have four sections. -->
-<!-- step-42:  Add the new bb1-window class to the .bb1a, .bb1b, and .bb1c elements. This will apply the gradient to them.-->
-          <div class="bb1a bb1-window"></div>
-          <div class="bb1b bb1-window"></div>
-          <div class="bb1c bb1-window"></div>
-          <div class="bb1d"></div>
-       </div>
-<!-- step-18: Your first building looks pretty good now. Nest three new div elements in the .background-buildings container and give them the classes of bb2, bb3, and bb4 in that order. These will be three more buildings for the background.-->
-   
-              <div class="bb2">
-<!-- step-48:Nest two new div elements within .bb2, give them the classes of bb2a and bb2b, in that order. These will be two sections for this building. -->
-                 <div class="bb2a"></div>
-                 <div class="bb2b"></div>
-              </div>
-       
-
-     
-              <div class="bb3">
-
-              </div>
-       
-              <div></div>
-<!-- step-67: Add the new building-wrap class to the .bb1 and .bb4 elements. This will apply the centering properties to the buildings that need it. -->
-              <div class="bb4 building-wrap">
-<!-- step-62: The next building will have three sections. Nest three div elements within .bb4. Give them the classes of bb4a, bb4b and bb4c in that order. -->
-                 <div class="bb4a"></div>
-                 <div class="bb4b"></div>
-<!-- step-72: Add the new window-wrap class to the .bb4c element. -->
-                 <div class="bb4c window-wrap">
-<!-- step-69: Nest four new div elements within .bb4c, give them all the class of bb4-window. These will be windows for this building.
- -->
-                    <div class="bb4-window"></div>
-                    <div class="bb4-window"></div>
-                    <div class="bb4-window"></div>
-                    <div class="bb4-window"></div>
-                 </div>
-              </div>
-              <div></div>
-              <div></div>
-              
-
-    </div>
-
-<!-- step-28: The background buildings are starting to look pretty good. Create a new div below the .background-buildings element and give it a class of foreground-buildings. This will be another container for more buildings. -->
-
-<div class="foreground-buildings">
-<!-- step-30:Nest six div elements within .foreground-buildings and give them the classes of fb1 through fb6 in that order. "fb" stands for "foreground building". These will be six more buildings for the foreground.  -->
-<!-- step-36: Squeeze the buildings together again by adding two empty div elements within both the top and bottom of the .foreground-buildings element, and one more in between .fb2 and .fb3. -->
-    <div></div>
-    <div></div>
-<!-- step-75: Add the building-wrap class to the .fb1 element to center the sections. -->
-    <div class="fb1 building-wrap">
-<!--step-73: Looks good! On to the foreground buildings! Turn the .fb1 building into three sections by nesting three new div elements within it. Give them the classes of fb1a, fb1b and fb1c, in that order.  -->
-        <div class="fb1a"></div>
-        <div class="fb1b"></div>
-        <div class="fb1c"></div>
-    </div>
-
-     <div class="fb2">
-<!-- step-81: On to the next building! Nest two div elements within .fb2 and give them classes of fb2a and fb2b, in that order.-->
-        <div class="fb2a"></div>
-<!-- step-84:Add your window-wrap class to .fb2b to position the new window elements.  -->
-        <div class="fb2b window-wrap">
-<!-- step-83:Nest three div elements within .fb2b and give them a class of fb2-window. These will be windows for this section of the building.-->
-            <div class="fb2-window"></div>
-            <div class="fb2-window"></div>
-            <div class="fb2-window"></div>
+    -->
+        <div></div>
+        <div></div>
+    <!-- step-10:Nest a div with a class of bb1 in the background buildings container. Open your styles.css file, and give .bb1 a width of 10% and height of 70%. "bb" stands for "background building", this will be your first building.-->
+    <!-- step-67: Add the new building-wrap class to the .bb1 and .bb4 elements. This will apply the centering properties to the buildings that need it. -->
+        <div class="bb1 building-wrap">
+    <!-- step-11:Nest four div elements in the .bb1 container. Give them the classes bb1a, bb1b, bb1c, and bb1d in that order. This building will have four sections. -->
+    <!-- step-42:  Add the new bb1-window class to the .bb1a, .bb1b, and .bb1c elements. This will apply the gradient to them.-->
+            <div class="bb1a bb1-window"></div>
+            <div class="bb1b bb1-window"></div>
+            <div class="bb1c bb1-window"></div>
+            <div class="bb1d"></div>
         </div>
-     </div>
-     <div></div>
-     <div class="fb3">
-<!-- step-88: For the next building, nest four div elements within .fb3 with classes of fb3a, fb3b, fb3a again, and fb3b again, in that order. This building will have four sections, and the top two will be almost the same as the bottom two. -->
-         <div class="fb3a"></div>
-         <div class="fb3b"></div>
-         <div class="fb3a"></div>
-         <div class="fb3b"></div>
-     </div>
-
-     <div class="fb4">
-
-     </div>
-
-     <div class="fb5">
-
-     </div>
-
-     <div class="fb6">
-       
-     </div>
-     <div></div>
-     <div></div>
-</div>
-
-
-   
+    <!-- step-18: Your first building looks pretty good now. Nest three new div elements in the .background-buildings container and give them the classes of bb2, bb3, and bb4 in that order. These will be three more buildings for the background.-->
+    
+                <div class="bb2">
+    <!-- step-48:Nest two new div elements within .bb2, give them the classes of bb2a and bb2b, in that order. These will be two sections for this building. -->
+                    <div class="bb2a"></div>
+                    <div class="bb2b"></div>
+                </div>
         
-         
-               
-                       
-</body>
+
+        
+                <div class="bb3">
+
+                </div>
+        
+                <div></div>
+    <!-- step-67: Add the new building-wrap class to the .bb1 and .bb4 elements. This will apply the centering properties to the buildings that need it. -->
+                <div class="bb4 building-wrap">
+    <!-- step-62: The next building will have three sections. Nest three div elements within .bb4. Give them the classes of bb4a, bb4b and bb4c in that order. -->
+                    <div class="bb4a"></div>
+                    <div class="bb4b"></div>
+    <!-- step-72: Add the new window-wrap class to the .bb4c element. -->
+                    <div class="bb4c window-wrap">
+    <!-- step-69: Nest four new div elements within .bb4c, give them all the class of bb4-window. These will be windows for this building.
+    -->
+                        <div class="bb4-window"></div>
+                        <div class="bb4-window"></div>
+                        <div class="bb4-window"></div>
+                        <div class="bb4-window"></div>
+                    </div>
+                </div>
+                <div></div>
+                <div></div>
+                
+
+        </div>
+
+    <!-- step-28: The background buildings are starting to look pretty good. Create a new div below the .background-buildings element and give it a class of foreground-buildings. This will be another container for more buildings. -->
+
+    <div class="foreground-buildings">
+    <!-- step-30:Nest six div elements within .foreground-buildings and give them the classes of fb1 through fb6 in that order. "fb" stands for "foreground building". These will be six more buildings for the foreground.  -->
+    <!-- step-36: Squeeze the buildings together again by adding two empty div elements within both the top and bottom of the .foreground-buildings element, and one more in between .fb2 and .fb3. -->
+        <div></div>
+        <div></div>
+    <!-- step-75: Add the building-wrap class to the .fb1 element to center the sections. -->
+        <div class="fb1 building-wrap">
+    <!--step-73: Looks good! On to the foreground buildings! Turn the .fb1 building into three sections by nesting three new div elements within it. Give them the classes of fb1a, fb1b and fb1c, in that order.  -->
+            <div class="fb1a"></div>
+            <div class="fb1b"></div>
+            <div class="fb1c"></div>
+        </div>
+
+        <div class="fb2">
+    <!-- step-81: On to the next building! Nest two div elements within .fb2 and give them classes of fb2a and fb2b, in that order.-->
+            <div class="fb2a"></div>
+    <!-- step-84:Add your window-wrap class to .fb2b to position the new window elements.  -->
+            <div class="fb2b window-wrap">
+    <!-- step-83:Nest three div elements within .fb2b and give them a class of fb2-window. These will be windows for this section of the building.-->
+                <div class="fb2-window"></div>
+                <div class="fb2-window"></div>
+                <div class="fb2-window"></div>
+            </div>
+        </div>
+        <div></div>
+    <!-- step-91: Add your building-wrap class to the .fb3 element to center the sections. -->
+        <div class="fb3 building-wrap">
+    <!-- step-88: For the next building, nest four div elements within .fb3 with classes of fb3a, fb3b, fb3a again, and fb3b again, in that order. This building will have four sections, and the top two will be almost the same as the bottom two. -->
+    <!-- step-94: Add your window-wrap class to the .fb3a element to center and space the windows. -->
+            <div class="fb3a window-wrap">
+    <!-- step-92: Nest three new div elements in the first .fb3a element. Give them each a class of fb3-window. These will be windows for this section. -->
+                <div class="fb3-window"></div>
+                <div class="fb3-window"></div>
+                <div class="fb3-window"></div>
+            </div>
+            <div class="fb3b"></div>
+            <div class="fb3a"></div>
+            <div class="fb3b"></div>
+        </div>
+
+        <div class="fb4">
+    <!-- step-96: Only three more buildings to go. Nest two new div elements within the .fb4 element and give them the classes of fb4a and fb4b, in that order. Remember that you sort of flipped the location of .fb4 and .fb5, so it's the rightmost purple building you are working on now. -->
+            <div class="fb4a"></div>
+            <div class="fb4b">
+    <!-- step-99: Nest six div elements within .fb4b and give them all a class of fb4-window. -->
+                <div class="fb4-window"></div>
+                <div class="fb4-window"></div>
+                <div class="fb4-window"></div>
+                <div class="fb4-window"></div>
+                <div class="fb4-window"></div>
+                <div class="fb4-window"></div>
+            </div>
+        </div>
+
+        <div class="fb5">
+
+        </div>
+
+        <div class="fb6">
+        
+        </div>
+        <div></div>
+        <div></div>
+        </div>         
+                
+                        
+    </body>
 </html>
