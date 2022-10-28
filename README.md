@@ -171,7 +171,7 @@ I am learning CSS variables by Building a City Skyline.
 More Info [here](./Day-26/Day-26.md)
 
 ## Day-27  
-
+I am Learning CSS Grid by Building a Magazine.
 
 
 More Info [here](./Day-27/Day-27.md)
