@@ -4,5 +4,5 @@ Learn CSS Transforms by Building a Penguin.
 I learnt the following:
 
 
-Check the HTML code [here](./.html)  
-Check the CSS code [here](./.css)
+Check the HTML code [here](./full-code.html)  
+Check the CSS code [here](./full-code.css)

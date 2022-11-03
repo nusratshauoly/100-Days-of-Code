@@ -3,10 +3,15 @@
  /* step-3: Normalise your page's sizing, by removing the body element's margin and padding. */
  /* step-54: So far, the .face and .chin elements have the same background-color.
 Create a custom CSS property called --penguin-face, and set it to white.
-
+ */
+ /* step-82: The penguin's beak and feet share the same color.
+Create a new custom CSS variable named --penguin-picorna, and replace all relavant property values with it.
  */
  :root{
  --penguin-face: white;
+ --penguin-picorna: orange;
+ /* step-88: Create a custom CSS variable named --penguin-skin, and set it to gray. Then, replace all relevant property values with it. */
+ --penguin-skin:gray;
  }
  body{
     margin: 0;
@@ -21,7 +26,7 @@ height: 100vh;
 }
 /* step-7: Target the .ground element, and set its width to take up the full width of the viewport. Then, set the height to 400px. */
 .ground{
-    height: 400px;
+    /* height: 400px; */
     width: 100vw;
 /* step-8:Give the .ground element a background with a linear gradient angled 90 degrees clockwise, starting at rgb(88, 175, 236) and ending at rgb(182, 255, 255) */
 background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
@@ -29,6 +34,8 @@ z-index: 3;
 position: absolute;
 /* step-18: To overlap the mountain and .ground elements better, give the mountain a margin-top of 100px, and the .ground element a margin-top of -58px. */
 margin-top: -58px;
+/* step-104: Finally, calculate the height of the .ground element to be the height of the viewport minus the height of the .penguin element. */
+ height: calc(100vh - 300px);
 }
 /* step-11: Target the .penguin element, and set its width and height to 300px.
  */
@@ -41,6 +48,9 @@ margin-top: 75px;
 /* step-29: Change the stack level of the .penguin element such that it appears in front of the .ground element, and give it a position of relative. */
 z-index:4;
 position: relative;
+/* step-103: Change the .penguin element's transition behavior during transformation to have a duration of 1s, a timing function of ease-in-out, and a delay of 0ms.
+ */
+ transition: 1s ease-in-out 0ms;
 }
 /* step-14: Target the .left-mountain element, and set its width and height to 300px. Then, set the background to a linear gradient starting at rgb(203, 241, 228) and ending at rgb(80, 183, 255). */
 .left-mountain{
@@ -88,7 +98,9 @@ top:-75px;
 .penguin-head{
     width:50%;
     height:45%;
-    background: linear-gradient(45deg,gray,rgb(239, 240, 228));
+ /* background: linear-gradient(45deg,gray,rgb(239, 240, 228)); */
+ /* step-88: Create a custom CSS variable named --penguin-skin, and set it to gray. Then, replace all relevant property values with it. */
+ background: linear-gradient(45deg,var(--penguin-skin),rgb(239, 240, 228));
 /* step-31: Most penguins do not have a square head.
 Give the penguin a slightly oval head by setting the radius of the top corners to 70% and the radius of the bottom corners to 65%. */
 border-radius: 70% 70% 65% 65%;
@@ -105,6 +117,8 @@ border-radius: 70% 70% 65% 65%;
     width:53%;
     height:45%;
     background: linear-gradient(45deg, rgb(134, 133, 133) 0%,rgb(234, 231, 231) 25%, white 67%);
+
+
 /* step-33: Use the border-radius property with a value of 80% 80% 100% 100%, to give the penguin a slightly rounded body.*/
     border-radius: 80% 80% 100% 100%;
 /* step-36: Position the .penguin-body element 40% from the top, and 23.5% from the left of its parent. */
@@ -121,7 +135,7 @@ left:23.5%;
  */
  width: 50%;
  height:45%;
- background-color: gray;
+ /* background-color: gray; */
  /* step-41:Position the pseudo-element 10% from the top and 25% from the left of its parent. */
  top:10%;
  left:25%;
@@ -131,6 +145,8 @@ left:23.5%;
  top:0%;
  /* step-43: Increase the psuedo-element's transparency by 30%. */
  opacity: 70%;
+ /* step-88: Create a custom CSS variable named --penguin-skin, and set it to gray. Then, replace all relevant property values with it. */
+ background-color : var(--penguin-skin);
 }
 /* step-34: Target all descendent elements of the .penguin element, and give them a position of absolute.*/
 .penguin *{
@@ -173,4 +189,182 @@ left:23.5%;
     top:25%;
     left:5%;
     border-radius: 70% 70% 100% 100%;
+}
+/* step-57: Target the .eye elements, and give them a width of 15%, height of 17%, and background-color of black. */
+.eye{
+    width:15%;
+    height: 17%;
+    background-color: black;
+/* step-58: Position the .eye elements 45% from the top of their parent, and give all corners a radius of 50%. */
+    top: 45%;
+    border-radius: 50%;
+}
+/* step-59: Target the .eye element with the left class, and position it 25% from the left of its parent. Then, target the .eye element with the right class, and position it 25% from the right of its parent.
+ */
+ .eye.left{
+    left:25%;
+}
+.eye.right{
+    right:25%;
+}
+/* step-61: Target the .eye-lid elements, and give them a width of 150%, height of 100%, and background-color of --penguin-face. */
+.eye-lid{
+    width:150%;
+    height: 100%;
+    background-color: var(--penguin-face);
+/*step-62: Position the .eye-lid elements 25% from the top, and -23% from the left of their parents. Then, give all corners a radius of 50%. */
+    top: 25%;
+    left:-23%;
+    border-radius: 50%;
+}
+/* step-64: Target the .blush elements, and give them a width of 15%, height of 10%, and background-color of pink. */
+.blush{
+    width: 15%;
+    height: 10%;
+    background-color: pink;
+/* step-65: Position the .blush elements 65% from the top of their parent, and give all corners a radius of 50%. */
+    top: 65%;
+    border-radius: 50%;
+}
+/* step-66: Target the .blush element with a class of left, and position it 15% left of its parent. Then, target the .blush element with a class of right, and position it 15% right of its parent. */
+.blush.left{
+    left:15%;
+}
+.blush.right{
+    right:15%;
+}
+/* step-68: Target the .beak elements, and give them a height of 10%, background-color of orange, and give all corners a radius of 50%. */
+.beak{
+    height: 10%;
+    background-color: orange;
+    border-radius: 50%;
+/* step-82: The penguin's beak and feet share the same color.
+Create a new custom CSS variable named --penguin-picorna, and replace all relavant property values with it. */
+    background-color: var(--penguin-picorna);
+}
+/* step-69: Target the .beak element with a class of top, give it a width of 20%, and position it 60% from the top, and 40% from the left of its parent. */
+.beak.top{
+    width:20%;
+    top: 60%;
+    left:40%;
+}
+/* step-70: Target the .beak element with a class of bottom, and give it a width 4% smaller than .beak.top, 5% further from the top, and 2% further from the left of its parent than .beak.top. */
+.beak.bottom{
+    width:16%;
+    top: 65%;
+    left:42%;
+}
+/* step-74: Target the .shirt element, and set its font-size to 25px, font-family to Helvetica with a fallback of sans-serif, and font-weight to bold. */
+.shirt{
+    font-size: 25px;
+    font-family: Helvetica,sans-serif;
+    font-weight: bold;
+/* step-77: Position the .shirt element 165px from the top, and 127.5px from the left of its parent. Then, increase its stacking order such that it appears above the .penguin-body element. */
+    top:165px;
+    left: 127.5px;
+    z-index: 1;
+/* step-78: For the shirt's final touch, set the color to #6a6969. */
+     color: #6a6969;
+}
+/* step-75: If you look closely, the heart emoji is slightly different. This is because some of the character's properties were overridden by the font-weight style of bold.
+Fix this, by targeting the div with the heart emoji, and setting its font-weight to its original value.
+ */
+ .shirt div{
+    font-weight: initial;
+/* step-76: Position the div with the heart emoji 22.5px from the top, and 12px from the left of its parent. */
+    top: 22.5px;
+    left: 12px;
+}
+/* step-80:Target the .foot elements, and give them a width of 15%, height of 30%, and background-color of orange.  */
+.foot{
+    width: 15%;
+    height: 30%;
+    background-color: orange;
+/* step-81: Position the .foot elements 85% from the top of their parent, and give all corners a radius of 50%. */
+    top:85%;
+    border-radius: 50%;
+/* step-82: The penguin's beak and feet share the same color.
+Create a new custom CSS variable named --penguin-picorna, and replace all relavant property values with it. */
+    background-color: var(--penguin-picorna);
+/* step-85: Change the stacking order of the .foot elements such that they appear beneath the .penguin-body element. */
+    z-index: -1;
+}
+/* step-83:Target the .foot element with a class of left, and position it 25% left of its parent. Then, target the .foot element with a class of right, and position it 25% right of its parent. */
+.foot.left{
+    left:25%;
+/* step-84: To make the penguin's feet look more penguiny, rotate the left foot by 80deg, and the right by -80deg. */
+transform:rotate(80deg);
+  }
+  .foot.right{
+    right: 25%;
+/* step-84: To make the penguin's feet look more penguiny, rotate the left foot by 80deg, and the right by -80deg. */
+transform:rotate(-80deg);
+  }
+  /* step-87: Target the .arm elements, and give them a width of 30%, a height of 60%, and a background of linear gradient at 90deg from clockwise, starting at gray, and ending at rgb(209, 210, 199).*/
+  .arm{
+    width: 30%;
+    height: 60%;
+/* background: linear-gradient(90deg,gray,rgb(209, 210, 199)); */
+ /* step-88: Create a custom CSS variable named --penguin-skin, and set it to gray. Then, replace all relevant property values with it. */
+ background: linear-gradient(90deg,var(--penguin-skin),rgb(209, 210, 199));
+ /* step-93: Fun fact: Most, if not all, flippers are not naturally rectangles.
+Give the .arm elements top -left, -right, and bottom-right corners a radius of 30%, and the bottom-left corner a radius of 120%.
+ */
+ border-radius: 30% 30% 30% 120%;
+ /* step-94: Change the .arm elements' stacking order such that they appear behind the .penguin-body element. */
+ z-index: -1;
+}
+/* step-89: Target the .arm element with a class of left, and position it 35% from the top, and 5% from the left of its parent. Then, target the .arm element with a class of right, and position it 0% from the top, and -5% from the right of its parent. */
+.arm.left{
+    top:35%;
+    left:5%;
+/* step-90: Within the .arm.left selector, alter the origin of the transform function to be the top left corner of its parent.*/
+transform-origin:top left;
+/* step-91: To keep the linear gradient on the correct side of the penguin's left arm, first rotate it by 130deg, then invert the x-axis. */
+transform: rotate(130deg) scaleX(-1);
+/* step-100: Use the wave animation on the left arm. Have the animation last 3s, infinitely iterate, and have a linear timing function.
+ */
+ transition: 3s linear infinite;
+ animation-name: wave;
+ animation-duration: 3s;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear;
+}
+.arm.right{
+    top:0%;
+    right:-5%;
+/* step-92: Rotate the right arm by 45deg counterclockwise. */
+transform: rotate(-45deg);
+}
+/* step-101: Target the .penguin element when it is active, and increase its size by 50% in both dimensions.
+ */
+ .penguin:active{
+    transform: scale(1.5);
+/* step-102: When you activate the .penguin element, it might look as though you can drag it around. This is not true.
+Indicate this to users, by giving the active element a cursor property of not-allowed.
+ */
+ cursor: not-allowed;
+ }
+/* step-95: Now, you are going to use CSS animations to make the penguin wave.
+Define a new @keyframes named wave.
+ */
+ /* step-96: Give wave four waypoints starting at 10%, and incrementing by 10%.
+ */
+ @keyframes wave{
+/* step-97: Within the first waypoint, rotate to 110deg, and retain the scaling of the left arm. */
+    10%{
+        transform:rotate(110deg) scaleX(-1);
+    }
+    20%{
+/* step-98: Within the second waypoint, rotate to 130deg, and retain the scaling of the left arm.
+*/
+        transform:rotate(130deg) scaleX(-1);
+    }
+    30%{
+/* step-99: For the third and fourth waypoints, repeat the transform pattern once more. */
+transform:rotate(110deg) scaleX(-1);
+    }
+    40%{
+        transform:rotate(130deg) scaleX(-1);
+    }
 }
