@@ -178,7 +178,7 @@ More Info [here](./Day-27/Day-27.md)
 
 
 ## Day-28  
-
+I am learning Build a Product Landing Page.
 
 
 More Info [here](./Day-28/Day-28.md)
@@ -196,8 +196,7 @@ I am learning CSS Transforms by Building a Penguin.
 More Info [here](./Day-30/Day-30.md)
 
 ## Day-31  
-
-
+I am learning Build a Personal Portfolio Webpage.
 
 More Info [here](./Day-31/Day-31.md)
 
