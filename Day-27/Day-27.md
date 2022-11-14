@@ -46,7 +46,7 @@ Also, create a .quote::after selector and set the content property to " with a s
 23. `column-gap:3rem;`: column-gap property to 3rem to provide more spacing between the columns.
 24. `list-style-type:none;`
 25. ` gap: 2rem;`: The gap property is a shorthand way to set the value of column-gap and row-gap at the same time.
-26. 
+ 
 
 Check the HTML code [here](./full-code.html)  
 Check the CSS code [here](./full-code.css)
