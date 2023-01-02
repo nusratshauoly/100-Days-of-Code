@@ -16,3 +16,6 @@ Tests
 Waiting:myArray should now equal [["dog", 3]].
 Waiting:removedFromMyArray should contain ["John", 23].
 */
+const myArray = [["John", 23], ["dog", 3]];
+const removedFromMyArray = myArray.shift();
+console.log(removedFromMyArray);
