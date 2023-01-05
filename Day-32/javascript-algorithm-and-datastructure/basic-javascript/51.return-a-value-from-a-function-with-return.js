@@ -21,3 +21,8 @@ Waiting:timesFive(5) should return 25
 Waiting:timesFive(2) should return 10
 Waiting:timesFive(0) should return 0
 */
+
+function timesFive(num){
+    return num * 5;
+  }
+  const answer = timesFive(5);

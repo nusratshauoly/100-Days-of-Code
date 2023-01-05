@@ -24,8 +24,4 @@ function functionWithArgs(param1, param2){
   functionWithArgs(3,6);
   functionWithArgs(30,6);
   
-  function functionWithArgs1(param1, param2){
-    console.log(param1 + param2);
-  }
-  functionWithArgs1(3, 9);
-  functionWithArgs1(6, 12);
+  
